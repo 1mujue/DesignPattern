@@ -1,5 +1,5 @@
 #pragma once
-#include "Maze.h"
+#include "maze/Maze.h"
 #include "wall/Wall.h"
 #include "room/Room.h"
 #include "door/Door.h"

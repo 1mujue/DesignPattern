@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Direction.h">
+    <ClInclude Include="include\tool\Direction.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\Error.h">
+    <ClInclude Include="include\tool\Error.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\MapSite.h">
+    <ClInclude Include="include\entity\type\MapSite.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\log.h">
+    <ClInclude Include="include\tool\log.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\door\Door.h">
@@ -36,69 +36,123 @@
     <ClInclude Include="include\entity\room\Room.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\entity\room\EnchantedRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\door\EnchantedDoor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory\BombMazeFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory\EnchantedMazeFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\room\BombRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\wall\BombWall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\maze\Maze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\maze\MazeGame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\builder\MazeBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\builder\StandardMazeBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\builder\CountingMazeBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\door\NormalDoor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\room\NormalRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\type\Enchanted.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\type\Bomb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\wall\NomalWall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="include\entity\Maze.h">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="include\factory\MazeFactory.h">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="include\factory\EnchantedMazeFactory.h">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="include\entity\room\EnchantedRoom.h">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="include\entity\door\EnchantedDoor.h">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="include\entity\room\BombRoom.h">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="include\entity\wall\BombWall.h">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="include\factory\BombMazeFactory.h">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\entity\room\Room.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\room\BombRoom.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\entity\room\EnchantedRoom.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\entity\door\Door.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\entity\door\EnchantedDoor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\entity\wall\Wall.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\factory\MazeFatory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tool\log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\room\EnchantedRoom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\door\EnchantedDoor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\factory\BombMazeFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\factory\EnchantedMazeFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="src\entity\wall\BombWall.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\factory\BombMazeFactory.cpp">
+    <ClCompile Include="src\entity\room\BombRoom.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\factory\MazeFatory.cpp">
+    <ClCompile Include="src\maze\Maze.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\factory\EnchantedMazeFactory.cpp">
+    <ClCompile Include="src\maze\MazeGame.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\Maze.cpp">
+    <ClCompile Include="src\builder\StandardMazeBuilder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\log.cpp">
+    <ClCompile Include="src\builder\CountingMazeBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\builder\Builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\type\Bomb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\type\Enchanted.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\door\NormalDoor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\room\NormalRoom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\wall\NormalWall.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,9 +1,9 @@
 #pragma once
-#include "type/MapSite.h"
+#include "Room.h"
 
-class Wall : public MapSite {
+class NormalRoom : public Room {
 public:
-	Wall();
+	NormalRoom(int);
 
 	virtual void enter();
 	virtual void printInfo();

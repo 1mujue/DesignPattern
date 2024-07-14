@@ -143,36 +143,54 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\Direction.h" />
+    <ClInclude Include="include\builder\CountingMazeBuilder.h" />
+    <ClInclude Include="include\builder\MazeBuilder.h" />
+    <ClInclude Include="include\builder\StandardMazeBuilder.h" />
+    <ClInclude Include="include\entity\door\NormalDoor.h" />
+    <ClInclude Include="include\entity\room\NormalRoom.h" />
+    <ClInclude Include="include\entity\type\Bomb.h" />
+    <ClInclude Include="include\entity\type\Enchanted.h" />
+    <ClInclude Include="include\entity\wall\NomalWall.h" />
+    <ClInclude Include="include\tool\Direction.h" />
     <ClInclude Include="include\entity\door\Door.h" />
-    <ClInclude Include="include\Error.h" />
-    <ClInclude Include="include\log.h" />
-    <ClInclude Include="include\entity\MapSite.h" />
+    <ClInclude Include="include\entity\door\EnchantedDoor.h" />
+    <ClInclude Include="include\maze\Maze.h" />
+    <ClInclude Include="include\maze\MazeGame.h" />
+    <ClInclude Include="include\entity\room\BombRoom.h" />
+    <ClInclude Include="include\entity\room\EnchantedRoom.h" />
+    <ClInclude Include="include\entity\wall\BombWall.h" />
+    <ClInclude Include="include\tool\Error.h" />
+    <ClInclude Include="include\factory\BombMazeFactory.h" />
+    <ClInclude Include="include\factory\EnchantedMazeFactory.h" />
+    <ClInclude Include="include\tool\log.h" />
+    <ClInclude Include="include\entity\type\MapSite.h" />
     <ClInclude Include="include\entity\room\Room.h" />
     <ClInclude Include="include\entity\wall\Wall.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\entity\room\BombRoom.h" />
-    <ClCompile Include="include\entity\wall\BombWall.h" />
-    <ClCompile Include="include\entity\door\EnchantedDoor.h" />
-    <ClCompile Include="include\entity\room\EnchantedRoom.h" />
-    <ClCompile Include="include\factory\BombMazeFactory.h" />
-    <ClCompile Include="include\factory\EnchantedMazeFactory.h" />
     <ClCompile Include="include\factory\MazeFactory.h" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="include\entity\Maze.h" />
+    <ClCompile Include="src\builder\Builder.cpp" />
+    <ClCompile Include="src\builder\CountingMazeBuilder.cpp" />
+    <ClCompile Include="src\builder\StandardMazeBuilder.cpp" />
     <ClCompile Include="src\entity\door\Door.cpp" />
     <ClCompile Include="src\entity\door\EnchantedDoor.cpp" />
-    <ClCompile Include="src\entity\factory\BombMazeFactory.cpp" />
-    <ClCompile Include="src\entity\factory\EnchantedMazeFactory.cpp" />
-    <ClCompile Include="src\entity\factory\MazeFatory.cpp" />
-    <ClCompile Include="src\entity\Maze.cpp" />
+    <ClCompile Include="src\entity\door\NormalDoor.cpp" />
+    <ClCompile Include="src\entity\room\NormalRoom.cpp" />
+    <ClCompile Include="src\entity\type\Bomb.cpp" />
+    <ClCompile Include="src\entity\type\Enchanted.cpp" />
+    <ClCompile Include="src\entity\wall\NormalWall.cpp" />
+    <ClCompile Include="src\factory\BombMazeFactory.cpp" />
+    <ClCompile Include="src\factory\EnchantedMazeFactory.cpp" />
+    <ClCompile Include="src\factory\MazeFatory.cpp" />
+    <ClCompile Include="src\maze\Maze.cpp" />
+    <ClCompile Include="src\maze\MazeGame.cpp" />
     <ClCompile Include="src\entity\room\BombRoom.cpp" />
     <ClCompile Include="src\entity\room\EnchantedRoom.cpp" />
     <ClCompile Include="src\entity\room\Room.cpp" />
     <ClCompile Include="src\entity\wall\BombWall.cpp" />
     <ClCompile Include="src\entity\wall\Wall.cpp" />
-    <ClCompile Include="src\log.cpp" />
+    <ClCompile Include="src\tool\log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

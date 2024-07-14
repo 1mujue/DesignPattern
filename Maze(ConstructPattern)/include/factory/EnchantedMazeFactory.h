@@ -10,4 +10,6 @@ public:
 
 	virtual Room* makeRoom(int) const;
 	virtual Door* makeDoor(Room*, Room*) const;
+
+	int inputMagic(const char* message) const;
 };

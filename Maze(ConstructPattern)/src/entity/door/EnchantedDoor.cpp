@@ -1,10 +1,15 @@
 #include "door/EnchantedDoor.h"
 
 EnchantedDoor::EnchantedDoor(Room* r1, Room* r2, int magic)
-	:Door(r1, r2), m_magic(magic), m_isMagic(false) {
+	:Door(r1, r2), Enchanted(magic) {
+	message = "please enter magic of an enchanted door:";
 	;
 }
 
-void EnchantedDoor::Enter() {
+void EnchantedDoor::enter() {
 	logMessage("enter an enchanted door.");
+}
+
+void EnchantedDoor::printInfo() {
+	logMessage("I am an enchanted door.");
 }

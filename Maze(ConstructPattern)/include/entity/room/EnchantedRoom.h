@@ -1,15 +1,11 @@
 #pragma once
 #include "Room.h"
+#include "type/Enchanted.h"
 
-class EnchantedRoom : public Room {
-private:
-	int m_magic;
-	bool m_isMagic;
+class EnchantedRoom : public Room, public Enchanted {
 public:
 	EnchantedRoom(int, int = 0);
 
-	virtual void Enter();
-	virtual void printInfo() {
-		logMessage("I am an enchanted room.");
-	}
+	virtual void enter();
+	virtual void printInfo();
 };

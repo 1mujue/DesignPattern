@@ -9,5 +9,5 @@ public:
 	Maze();
 
 	void addRoom(const Room*);
-	const Room* getRoomById(int) const;
+	Room* getRoomById(int) const;
 };

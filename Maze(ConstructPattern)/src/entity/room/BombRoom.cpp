@@ -1,9 +1,14 @@
 #include "room/BombRoom.h"
 
 BombRoom::BombRoom(int id, int damage)
-	: Room(id), m_damage(damage), m_isBombed(false){
+	: Room(id), Bomb(damage) {
+	message = "please enter damage of a bomb room.";
 }
 
-void BombRoom::Enter() {
+void BombRoom::enter() {
 	logMessage("enter a bomb room.");
+}
+
+void BombRoom::printInfo() {
+	logMessage("I am a bomb room.");
 }

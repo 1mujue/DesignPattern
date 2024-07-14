@@ -1,15 +1,11 @@
 #pragma once
 #include "Room.h"
+#include "type/Bomb.h"
 
-class BombRoom : public Room {
-private:
-	int m_damage;
-	bool m_isBombed;
+class BombRoom : public Room,public Bomb {
 public:
 	BombRoom(int, int = 0);
 
-	virtual void Enter();
-	virtual void printInfo() {
-		logMessage("I am a bomb room.");
-	}
+	virtual void enter();
+	virtual void printInfo();
 };

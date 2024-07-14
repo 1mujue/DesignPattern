@@ -1,10 +1,14 @@
 #include "room/EnchantedRoom.h"
 
 EnchantedRoom::EnchantedRoom(int id, int magic)
-	: Room(id), m_magic(magic), m_isMagic(false) {
-	;
+	: Room(id), Enchanted(magic) {
+	message = "please enter damage of an enchanted room:";
 }
 
-void EnchantedRoom::Enter() {
-	logMessage("enter an enchanted door.");
+void EnchantedRoom::enter() {
+	logMessage("enter an enchanted room.");
+}
+
+void EnchantedRoom::printInfo() {
+	logMessage("I am an enchanted room.");
 }

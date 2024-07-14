@@ -19,6 +19,9 @@ void Room::setSite(const Direction& direction, MapSite* mapSite) {
 	m_sites[direction] = mapSite;
 }
 
-void Room::Enter() {
+void Room::enter() {
 	logMessage("enter a room.");
+}
+void Room::printInfo() {
+	logMessage("I am a room.");
 }

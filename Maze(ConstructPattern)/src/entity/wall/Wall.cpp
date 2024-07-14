@@ -2,6 +2,10 @@
 
 Wall::Wall() { ; }
 
-void Wall::Enter() {
+void Wall::enter() {
 	logMessage("enter a wall.");
+}
+
+void Wall::printInfo() {
+	logMessage("I am a wall.");
 }

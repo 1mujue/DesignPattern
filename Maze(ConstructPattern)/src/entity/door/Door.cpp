@@ -1,7 +1,7 @@
 #include "door/Door.h"
 
-Door::Door(Room *r1, Room *r2)
-	:m_room1(r1), m_room2(r2) {
+Door::Door(const Room *r1,const Room *r2)
+	:m_room1(const_cast<Room *>(r1)), m_room2(const_cast<Room*>(r2)) {
 	this->m_isOpen = false;
 }
 
@@ -15,8 +15,11 @@ const Room* Door::otherSideFrom(const Room* room) {
 	return nullptr;
 }
 
-void Door::Enter() {
+void Door::enter() {
 	logMessage("enter a door.");
 }
 
+void Door :: printInfo() {
+	logMessage("I am a door.");
+}
 

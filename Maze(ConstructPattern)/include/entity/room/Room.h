@@ -1,5 +1,5 @@
 #pragma once
-#include "MapSite.h"
+#include "type/MapSite.h"
 
 class Room : public MapSite {
 protected:
@@ -8,12 +8,10 @@ protected:
 public:
 	Room(int);
 
-	virtual void Enter();
-	virtual void printInfo() {
-		logMessage("I am a room.");
-	}
-
 	const int getRoomId() const;
 	const MapSite* getSite(const Direction&);
 	void setSite(const Direction&, MapSite*);
+
+	virtual void enter();
+	virtual void printInfo();
 };

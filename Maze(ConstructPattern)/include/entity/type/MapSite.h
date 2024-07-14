@@ -1,10 +1,10 @@
 #pragma once
-#include "Direction.h"
-#include "log.h"
+#include "tool/Direction.h"
+#include "tool/log.h"
 
 //all object in maze.
 class MapSite {
 public:
-	virtual void Enter() = 0;
+	virtual void enter() = 0;
 	virtual void printInfo() = 0;
 };

@@ -1,15 +1,11 @@
 #pragma once
 #include "Wall.h"
+#include "type/Bomb.h"
 
-class BombWall : public Wall {
-private:
-	int m_damage;
-	bool m_isBombed;
+class BombWall : public Wall, public Bomb {
 public:
 	BombWall(int = 0);
 
-	virtual void Enter();
-	virtual void printInfo() {
-		logMessage("I am a bomb wall.");
-	}
+	virtual void enter();
+	virtual void printInfo();
 };
