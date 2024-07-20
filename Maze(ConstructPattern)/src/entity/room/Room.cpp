@@ -25,3 +25,7 @@ void Room::enter() {
 void Room::printInfo() {
 	logMessage("I am a room.");
 }
+
+Room* Room::clone() {
+	return nullptr;
+}

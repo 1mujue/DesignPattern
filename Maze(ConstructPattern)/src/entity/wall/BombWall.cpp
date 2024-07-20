@@ -12,3 +12,7 @@ void BombWall::enter() {
 void BombWall::printInfo() {
 	logMessage("I am a bomb wall.");
 }
+
+Wall* BombWall::clone() {
+	return nullptr;
+}

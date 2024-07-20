@@ -14,4 +14,6 @@ public:
 
 	virtual void enter();
 	virtual void printInfo();
+
+	virtual Door* clone();
 };

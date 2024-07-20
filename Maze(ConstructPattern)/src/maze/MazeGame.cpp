@@ -2,9 +2,13 @@
 
 MazeGame::MazeGame() { ; }
 
-Maze* MazeGame::createMazeByFactory(const MazeFactory& mazeFactory) {
+Maze* MazeGame::createMazeByAbstactFactory(const MazeFactory* mazeFactory) {
 	return nullptr;
 }
-Maze* MazeGame::createMazeByBuilder(const MazeBuilder& mazeBuilder) {
+Maze* MazeGame::createMazeByBuilder(const MazeBuilder* mazeBuilder) {
+	return nullptr;
+}
+
+Maze* MazeGame::createMazeByFactoryMethod(const MazeCreator* mazeCreator) {
 	return nullptr;
 }

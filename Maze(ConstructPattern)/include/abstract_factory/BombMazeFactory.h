@@ -1,15 +1,16 @@
 #pragma once
 #include "wall/BombWall.h"
-#include "factory/MazeFactory.h"
+#include "MazeFactory.h"
 #include "room/BombRoom.h"
 
 
 class BombMazeFactory : public MazeFactory {
+private:
+	int m_damage;
 public:
-	BombMazeFactory();
+	BombMazeFactory(int);
 
 	virtual Wall* makeWall() const;
 	virtual Room* makeRoom(int) const;
 
-	int inputDamage(const char* message) const;
 };

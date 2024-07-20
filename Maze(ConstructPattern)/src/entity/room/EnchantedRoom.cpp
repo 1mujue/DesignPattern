@@ -12,3 +12,7 @@ void EnchantedRoom::enter() {
 void EnchantedRoom::printInfo() {
 	logMessage("I am an enchanted room.");
 }
+
+Room* EnchantedRoom::clone() {
+	return nullptr;
+}

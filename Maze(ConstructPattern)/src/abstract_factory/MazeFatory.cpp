@@ -1,4 +1,4 @@
-#include "factory/MazeFactory.h"
+#include "abstract_factory/MazeFactory.h"
 
 MazeFactory::MazeFactory() { ; }
 

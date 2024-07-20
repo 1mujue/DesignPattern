@@ -19,7 +19,10 @@ void Door::enter() {
 	logMessage("enter a door.");
 }
 
-void Door :: printInfo() {
+void Door::printInfo() {
 	logMessage("I am a door.");
 }
 
+Door* Door::clone() {
+	return nullptr;
+}

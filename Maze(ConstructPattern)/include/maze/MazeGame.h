@@ -1,7 +1,8 @@
 #pragma once
 #include "Maze.h"
-#include "factory/MazeFactory.h"
+#include "abstract_factory/MazeFactory.h"
 #include "builder/MazeBuilder.h"
+#include "factory_method/MazeCreator.h"
 
 class MazeGame {
 private:
@@ -10,6 +11,7 @@ public:
 	MazeGame();
 
 	static const MazeGame& getInstance();
-	Maze* createMazeByFactory(const MazeFactory&);
-	Maze* createMazeByBuilder(const MazeBuilder&);
+	Maze* createMazeByAbstactFactory(const MazeFactory*);
+	Maze* createMazeByBuilder(const MazeBuilder*);
+	Maze* createMazeByFactoryMethod(const MazeCreator*);
 };

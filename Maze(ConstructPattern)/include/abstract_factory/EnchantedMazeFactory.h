@@ -5,11 +5,11 @@
 
 //create a maze with magic!
 class EnchantedMazeFactory : public MazeFactory {
+private:
+	int m_magic;
 public:
-	EnchantedMazeFactory();
+	EnchantedMazeFactory(int);
 
 	virtual Room* makeRoom(int) const;
 	virtual Door* makeDoor(Room*, Room*) const;
-
-	int inputMagic(const char* message) const;
 };

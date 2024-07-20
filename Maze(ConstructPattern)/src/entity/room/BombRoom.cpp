@@ -12,3 +12,7 @@ void BombRoom::enter() {
 void BombRoom::printInfo() {
 	logMessage("I am a bomb room.");
 }
+
+Room* BombRoom::clone() {
+	return nullptr;
+}

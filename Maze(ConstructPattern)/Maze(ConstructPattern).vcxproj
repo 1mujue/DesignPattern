@@ -151,6 +151,13 @@
     <ClInclude Include="include\entity\type\Bomb.h" />
     <ClInclude Include="include\entity\type\Enchanted.h" />
     <ClInclude Include="include\entity\wall\NomalWall.h" />
+    <ClInclude Include="include\factory_method\BombMazeCreator.h" />
+    <ClInclude Include="include\factory_method\EnchantedMazeCreator.h" />
+    <ClInclude Include="include\factory_method\MazeCreator.h" />
+    <ClInclude Include="include\prototype\MazePrototypeFactory.h" />
+    <ClInclude Include="include\singleton\SingletionEnchantedMazeFactory.h" />
+    <ClInclude Include="include\singleton\SingletonBombMazeFactory.h" />
+    <ClInclude Include="include\singleton\SingletonMazeFactory.h" />
     <ClInclude Include="include\tool\Direction.h" />
     <ClInclude Include="include\entity\door\Door.h" />
     <ClInclude Include="include\entity\door\EnchantedDoor.h" />
@@ -160,15 +167,15 @@
     <ClInclude Include="include\entity\room\EnchantedRoom.h" />
     <ClInclude Include="include\entity\wall\BombWall.h" />
     <ClInclude Include="include\tool\Error.h" />
-    <ClInclude Include="include\factory\BombMazeFactory.h" />
-    <ClInclude Include="include\factory\EnchantedMazeFactory.h" />
+    <ClInclude Include="include\abstract_factory\BombMazeFactory.h" />
+    <ClInclude Include="include\abstract_factory\EnchantedMazeFactory.h" />
     <ClInclude Include="include\tool\log.h" />
     <ClInclude Include="include\entity\type\MapSite.h" />
     <ClInclude Include="include\entity\room\Room.h" />
     <ClInclude Include="include\entity\wall\Wall.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\factory\MazeFactory.h" />
+    <ClCompile Include="include\abstract_factory\MazeFactory.h" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\builder\Builder.cpp" />
     <ClCompile Include="src\builder\CountingMazeBuilder.cpp" />
@@ -180,9 +187,12 @@
     <ClCompile Include="src\entity\type\Bomb.cpp" />
     <ClCompile Include="src\entity\type\Enchanted.cpp" />
     <ClCompile Include="src\entity\wall\NormalWall.cpp" />
-    <ClCompile Include="src\factory\BombMazeFactory.cpp" />
-    <ClCompile Include="src\factory\EnchantedMazeFactory.cpp" />
-    <ClCompile Include="src\factory\MazeFatory.cpp" />
+    <ClCompile Include="src\abstract_factory\BombMazeFactory.cpp" />
+    <ClCompile Include="src\abstract_factory\EnchantedMazeFactory.cpp" />
+    <ClCompile Include="src\abstract_factory\MazeFatory.cpp" />
+    <ClCompile Include="src\factory_method\BombMazeCreator.cpp" />
+    <ClCompile Include="src\factory_method\EnchantedMazeCreator.cpp" />
+    <ClCompile Include="src\factory_method\MazeCreator.cpp" />
     <ClCompile Include="src\maze\Maze.cpp" />
     <ClCompile Include="src\maze\MazeGame.cpp" />
     <ClCompile Include="src\entity\room\BombRoom.cpp" />
@@ -190,6 +200,10 @@
     <ClCompile Include="src\entity\room\Room.cpp" />
     <ClCompile Include="src\entity\wall\BombWall.cpp" />
     <ClCompile Include="src\entity\wall\Wall.cpp" />
+    <ClCompile Include="src\prototype\MazePrototypeFactory.cpp" />
+    <ClCompile Include="src\singleton\SingletonBombMazeFactory.cpp" />
+    <ClCompile Include="src\singleton\SingletonEnchantedMazeFactory.cpp" />
+    <ClCompile Include="src\singleton\SingletonMazeFactory.cpp" />
     <ClCompile Include="src\tool\log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

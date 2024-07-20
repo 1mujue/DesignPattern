@@ -13,3 +13,7 @@ void EnchantedDoor::enter() {
 void EnchantedDoor::printInfo() {
 	logMessage("I am an enchanted door.");
 }
+
+Door* EnchantedDoor::clone() {
+	return nullptr;
+}

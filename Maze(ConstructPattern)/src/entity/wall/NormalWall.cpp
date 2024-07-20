@@ -11,3 +11,7 @@ void NormalWall::enter() {
 void NormalWall::printInfo() {
 	logMessage("I am a normal wall.");
 }
+
+Wall* NormalWall::clone() {
+	return nullptr;
+}

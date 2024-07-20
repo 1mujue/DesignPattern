@@ -11,3 +11,7 @@ void NormalRoom::enter() {
 void NormalRoom::printInfo() {
 	logMessage("I am a normal room.");
 }
+
+Room* NormalRoom::clone() {
+	return nullptr;
+}

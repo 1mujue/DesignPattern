@@ -9,3 +9,7 @@ void Wall::enter() {
 void Wall::printInfo() {
 	logMessage("I am a wall.");
 }
+
+Wall* Wall::clone() {
+	return nullptr;
+}

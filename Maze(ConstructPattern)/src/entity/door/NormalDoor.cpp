@@ -11,3 +11,7 @@ void NormalDoor::enter() {
 void NormalDoor::printInfo() {
 	logMessage("I am a normal door.");
 }
+
+Door* NormalDoor::clone() {
+	return nullptr;
+}
