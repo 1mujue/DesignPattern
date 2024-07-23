@@ -1,0 +1,28 @@
+# Key words
+abstract factory, concrete factory, abstract product, concrete product.
+
+
+
+# Introductions
+An ABSTRACT factory provides with some interfaces (1) to create some products, and each product here is also an ABSTRACT product. 
+
+Then, we can have many CONCRETE factories to EXTEND this abstract factory,  and they will create CONCRETE products for us.
+
+HOWEVER, in this example, we ALSO make abstract factory and abstract product CONCRETE. (2)
+As you can see in MazeFactory.cpp , our Maze Factory could create Door, Wall, Room,
+which indicates Maze Factory ,Door, Wall and Room are also concrete.
+
+
+
+# Structure
+
+
+
+
+
+# TIPS 
+1. "interface" is NOT the interface in java here, it just represents a "switch",we pull it, then we will turn on or off the light, but how it happens, we don't care, we just know to pull it.
+
+2. I really don't like it. I don't like make something abstract concrete.
+
+3. Usually we would use Factory Method or Prototype to realize Abstract Factory, whereas a Concrete Factory is usually a Singleton.

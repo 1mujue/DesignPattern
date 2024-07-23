@@ -1,0 +1,22 @@
+#pragma once
+#include "maze/Maze.h"
+#include "wall/Wall.h"
+#include "room/Room.h"
+#include "door/Door.h"
+/*
+
+*/
+
+
+/*
+* this is the abstract factory.
+*/
+class MazeFactory {
+public:
+	MazeFactory();
+
+	virtual Maze* makeMaze() const;
+	virtual Wall* makeWall() const;
+	virtual Room* makeRoom(int) const;
+	virtual Door* makeDoor(Room*, Room*) const;
+};
