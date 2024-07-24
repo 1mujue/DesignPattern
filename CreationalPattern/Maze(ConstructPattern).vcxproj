@@ -207,6 +207,7 @@
     <None Include="include\factory_method\README.md" />
     <None Include="include\prototype\README.md" />
     <None Include="include\singleton\README.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
