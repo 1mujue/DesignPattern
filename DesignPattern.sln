@@ -5,9 +5,11 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignPattern", "DesignPattern\DesignPattern.vcxproj", "{D6559C24-1F14-42D7-A874-801838A482E5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConstructPattern", "ConstructPattern\Maze(ConstructPattern).vcxproj", "{D415022C-E8A8-4C33-9835-D2B416E521F6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BehavioralPattern", "BehavioralPattern\BehavioralPattern.vcxproj", "{1A57D763-9B6F-4ED9-894A-7096EB05F29C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StructurePattern", "StructurePattern\TextEditor(StructurePattern).vcxproj", "{03CC769C-CD34-4343-80FA-36F2B42410A4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreationalPattern", "CreationalPattern\Maze(ConstructPattern).vcxproj", "{D415022C-E8A8-4C33-9835-D2B416E521F6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StructuralPattern", "StructuralPattern\TextEditor(StructurePattern).vcxproj", "{03CC769C-CD34-4343-80FA-36F2B42410A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,14 @@ Global
 		{D6559C24-1F14-42D7-A874-801838A482E5}.Release|x64.Build.0 = Release|x64
 		{D6559C24-1F14-42D7-A874-801838A482E5}.Release|x86.ActiveCfg = Release|Win32
 		{D6559C24-1F14-42D7-A874-801838A482E5}.Release|x86.Build.0 = Release|Win32
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Debug|x64.ActiveCfg = Debug|x64
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Debug|x64.Build.0 = Debug|x64
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Debug|x86.ActiveCfg = Debug|Win32
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Debug|x86.Build.0 = Debug|Win32
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Release|x64.ActiveCfg = Release|x64
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Release|x64.Build.0 = Release|x64
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Release|x86.ActiveCfg = Release|Win32
+		{1A57D763-9B6F-4ED9-894A-7096EB05F29C}.Release|x86.Build.0 = Release|Win32
 		{D415022C-E8A8-4C33-9835-D2B416E521F6}.Debug|x64.ActiveCfg = Debug|x64
 		{D415022C-E8A8-4C33-9835-D2B416E521F6}.Debug|x64.Build.0 = Debug|x64
 		{D415022C-E8A8-4C33-9835-D2B416E521F6}.Debug|x86.ActiveCfg = Debug|Win32
