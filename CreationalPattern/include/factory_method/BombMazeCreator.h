@@ -1,9 +1,8 @@
 #pragma once
 #include "MazeCreator.h"
+#include "entity/type/Bomb.h"
 
-class BombMazeCreator : public MazeCreator {
-private:
-	int m_damage;
+class BombMazeCreator : public MazeCreator, public Bomb {
 public:
 	BombMazeCreator(int);
 

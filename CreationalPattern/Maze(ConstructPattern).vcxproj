@@ -153,7 +153,7 @@
     <ClInclude Include="include\factory_method\EnchantedMazeCreator.h" />
     <ClInclude Include="include\factory_method\MazeCreator.h" />
     <ClInclude Include="include\prototype\MazePrototypeFactory.h" />
-    <ClInclude Include="include\singleton\SingletionEnchantedMazeFactory.h" />
+    <ClInclude Include="include\singleton\SingletonEnchantedMazeFactory.h" />
     <ClInclude Include="include\singleton\SingletonBombMazeFactory.h" />
     <ClInclude Include="include\singleton\SingletonMazeFactory.h" />
     <ClInclude Include="include\tool\Direction.h" />
@@ -202,10 +202,11 @@
     <ClCompile Include="src\tool\log.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="include\abstract_factory\README.md" />
     <None Include="include\builder\README.md" />
+    <None Include="include\factory_method\README.md" />
+    <None Include="include\prototype\README.md" />
+    <None Include="include\singleton\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

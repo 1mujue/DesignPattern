@@ -4,11 +4,12 @@
 
 class Door : public MapSite {
 protected:
-	Room* m_room1;
-	Room* m_room2;
-	bool m_isOpen;
+	Room* p_room1;
+	Room* p_room2;
+	bool p_isOpen;
 public:
 	Door(const Room* = 0, const Room* = 0);
+	Door(const Door&);
 	
 	const Room* otherSideFrom(const Room*);
 
@@ -16,4 +17,5 @@ public:
 	virtual void printInfo();
 
 	virtual Door* clone();
+	void initialize(Room*, Room*);
 };

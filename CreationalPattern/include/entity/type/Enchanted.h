@@ -4,9 +4,9 @@
 
 class Enchanted {
 protected:
-	int m_magic;
-	bool m_isMagic;
-	const char* message;
+	int p_magic;
+	bool p_isMagic;
+	const char* p_message;
 public:
 	Enchanted(int);
 	void setMagic(int);

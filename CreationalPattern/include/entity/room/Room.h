@@ -3,10 +3,11 @@
 
 class Room : public MapSite {
 protected:
-	int m_roomId;
-	MapSite* m_sites[4];
+	int p_roomId;
+	MapSite* p_sites[4];
 public:
 	Room(int);
+	Room(const Room&);
 
 	const int getRoomId() const;
 	const MapSite* getSite(const Direction&);
@@ -16,4 +17,5 @@ public:
 	virtual void printInfo();
 
 	virtual Room* clone();
+	void initialize(int);
 };

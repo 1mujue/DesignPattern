@@ -4,6 +4,7 @@
 class Wall : public MapSite {
 public:
 	Wall();
+	Wall(const Wall&);
 
 	virtual void enter();
 	virtual void printInfo();

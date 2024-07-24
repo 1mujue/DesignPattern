@@ -2,7 +2,12 @@
 
 BombWall::BombWall(int damage)
 	: Wall(), Bomb(damage) {
-	message = "please enter damage of a bomb wall";
+	;
+}
+
+BombWall::BombWall(const BombWall& other) 
+	: Wall(), Bomb(other.p_damage) {
+	;
 }
 
 void BombWall::enter() {
@@ -14,5 +19,5 @@ void BombWall::printInfo() {
 }
 
 Wall* BombWall::clone() {
-	return nullptr;
+	return new BombWall(*this);
 }

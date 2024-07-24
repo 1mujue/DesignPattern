@@ -6,7 +6,7 @@
 
 class MazeCreator {
 protected:
-	Maze* maze;
+	Maze* p_maze;
 public:
 	//I didn't use Bomb Maze or Enchanted Maze to represent different type 
 	//of maze, so it is unnecessary to overide initMaze(). Therefore, it is 

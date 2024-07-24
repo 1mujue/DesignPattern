@@ -2,7 +2,12 @@
 
 EnchantedRoom::EnchantedRoom(int id, int magic)
 	: Room(id), Enchanted(magic) {
-	message = "please enter damage of an enchanted room:";
+	;
+}
+
+EnchantedRoom::EnchantedRoom(const EnchantedRoom& other)
+	: Room(other.p_roomId), Enchanted(other.p_magic) {
+	;
 }
 
 void EnchantedRoom::enter() {

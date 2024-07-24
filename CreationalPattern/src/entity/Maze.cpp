@@ -10,6 +10,11 @@ Maze::Maze(const char* type)
 	;
 }
 
+Maze::Maze(const Maze& other)
+	:m_type(other.m_type) {
+	;
+}
+
 void Maze::addRoom(const Room* room) {
 	this->m_rooms[room->getRoomId()] = *room;
 }
@@ -24,4 +29,8 @@ Room* Maze::getRoomById(int id) const {
 
 const char* Maze::getType() {
 	return m_type;
+}
+
+Maze* Maze::clone() {
+	return new Maze(*this);
 }

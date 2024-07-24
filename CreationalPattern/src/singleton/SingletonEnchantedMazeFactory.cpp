@@ -1,4 +1,4 @@
-#include "singleton/SingletionEnchantedMazeFactory.h"
+#include "singleton/SingletonEnchantedMazeFactory.h"
 #include "entity/room/EnchantedRoom.h"
 #include "entity/door/EnchantedDoor.h"
 

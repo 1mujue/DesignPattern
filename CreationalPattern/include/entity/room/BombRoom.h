@@ -5,6 +5,7 @@
 class BombRoom : public Room,public Bomb {
 public:
 	BombRoom(int, int = 0);
+	BombRoom(const BombRoom&);
 
 	virtual void enter();
 	virtual void printInfo();

@@ -2,6 +2,8 @@
 
 Wall::Wall() { ; }
 
+Wall::Wall(const Wall& other) { ; }
+
 void Wall::enter() {
 	logMessage("enter a wall.");
 }
@@ -11,5 +13,5 @@ void Wall::printInfo() {
 }
 
 Wall* Wall::clone() {
-	return nullptr;
+	return new Wall(*this);
 }

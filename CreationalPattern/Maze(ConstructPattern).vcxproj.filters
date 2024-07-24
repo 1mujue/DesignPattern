@@ -93,7 +93,7 @@
     <ClInclude Include="include\singleton\SingletonBombMazeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\singleton\SingletionEnchantedMazeFactory.h">
+    <ClInclude Include="include\singleton\SingletonEnchantedMazeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -181,9 +181,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
     <None Include="include\abstract_factory\README.md" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="include\builder\README.md" />
+    <None Include="include\factory_method\README.md" />
+    <None Include="include\prototype\README.md" />
+    <None Include="include\singleton\README.md" />
   </ItemGroup>
 </Project>

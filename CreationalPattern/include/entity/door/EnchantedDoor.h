@@ -5,6 +5,7 @@
 class EnchantedDoor : public Door, public Enchanted {
 public:
 	EnchantedDoor(Room* = 0, Room* = 0, int = 0);
+	EnchantedDoor(const EnchantedDoor&);
 
 	virtual void enter();
 	virtual void printInfo();

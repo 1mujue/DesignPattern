@@ -6,14 +6,18 @@ MazePrototypeFactory::MazePrototypeFactory(Maze* maze, Wall* wall, Room* room, D
 }
 
 Maze* MazePrototypeFactory::makeMaze() const {
-	return nullptr;
+	return m_maze->clone();
 }
 Wall* MazePrototypeFactory::makeWall() const {
-	return nullptr;
+	return m_wall->clone();
 }
-Room* MazePrototypeFactory::makeRoom(int) const {
-	return nullptr;
+Room* MazePrototypeFactory::makeRoom(int id) const {
+	Room* room = m_room->clone();
+	room->initialize(id);
+	return room;
 }
-Door* MazePrototypeFactory::makeDoor(Room*, Room*) const {
-	return nullptr;
+Door* MazePrototypeFactory::makeDoor(Room* r1, Room* r2) const {
+	Door* door = m_door->clone();
+	door->initialize(r2, r1);
+	return door;
 }

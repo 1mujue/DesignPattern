@@ -2,7 +2,12 @@
 
 BombRoom::BombRoom(int id, int damage)
 	: Room(id), Bomb(damage) {
-	message = "please enter damage of a bomb room.";
+	;
+}
+
+BombRoom::BombRoom(const BombRoom& other)
+	: Room(other.p_roomId), Bomb(other.p_damage) {
+	;
 }
 
 void BombRoom::enter() {
@@ -14,5 +19,5 @@ void BombRoom::printInfo() {
 }
 
 Room* BombRoom::clone() {
-	return nullptr;
+	return new BombRoom(*this);
 }

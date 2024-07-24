@@ -1,16 +1,21 @@
 #include "entity/door/Door.h"
 
 Door::Door(const Room *r1,const Room *r2)
-	:m_room1(const_cast<Room *>(r1)), m_room2(const_cast<Room*>(r2)) {
-	this->m_isOpen = false;
+	:p_room1(const_cast<Room *>(r1)), p_room2(const_cast<Room*>(r2)), p_isOpen(false) {
+	;
+}
+
+Door::Door(const Door& other)
+	: p_room1(other.p_room1), p_room2(other.p_room2),p_isOpen(false) {
+	;
 }
 
 const Room* Door::otherSideFrom(const Room* room) {
-	if (room == m_room1) {
-		return m_room2;
+	if (room == p_room1) {
+		return p_room2;
 	}
-	else if(room == m_room2) {
-		return m_room1;
+	else if(room == p_room2) {
+		return p_room1;
 	}
 	return nullptr;
 }
@@ -24,5 +29,10 @@ void Door::printInfo() {
 }
 
 Door* Door::clone() {
-	return nullptr;
+	return new Door(*this);
 }
+
+void Door::initialize(Room* r1 , Room* r2){
+	p_room1 = r1;
+	p_room2 = r2;
+};

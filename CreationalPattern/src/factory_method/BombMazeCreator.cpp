@@ -3,17 +3,17 @@
 #include "entity/room/BombRoom.h"
 
 BombMazeCreator::BombMazeCreator(int damage)
-	: MazeCreator(), m_damage(damage) {
+	: MazeCreator(), Bomb(damage) {
 	;
 }
 
 Maze* BombMazeCreator::createMaze() {
-	return this->maze;
+	return this->p_maze;
 }
 
 Wall* BombMazeCreator::makeWall() const {
-	return new BombWall(m_damage);
+	return new BombWall(p_damage);
 }
 Room* BombMazeCreator::makeRoom(int) const {
-	return new BombRoom(m_damage);
+	return new BombRoom(p_damage);
 }

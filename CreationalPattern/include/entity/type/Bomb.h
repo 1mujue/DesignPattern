@@ -4,9 +4,9 @@
 
 class Bomb {
 protected:
-	int m_damage;
-	bool m_isBombed;
-	const char* message;
+	int p_damage;
+	bool p_isBombed;
+	const char* p_message;
 public:
 	Bomb(int);
 	void setDamage(int);

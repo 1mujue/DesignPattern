@@ -2,7 +2,12 @@
 
 EnchantedDoor::EnchantedDoor(Room* r1, Room* r2, int magic)
 	:Door(r1, r2), Enchanted(magic) {
-	message = "please enter magic of an enchanted door:";
+	p_message = "please enter magic of an enchanted door:";
+	;
+}
+
+EnchantedDoor::EnchantedDoor(const EnchantedDoor& other)
+	: Door(other.p_room1, other.p_room2), Enchanted(other.p_magic) {
 	;
 }
 

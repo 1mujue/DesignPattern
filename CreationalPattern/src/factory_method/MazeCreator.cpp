@@ -1,11 +1,30 @@
 #include "factory_method/MazeCreator.h"
 
 void MazeCreator::initMaze() {
-	this->maze = new Maze();
+	this->p_maze = new Maze();
 }
 
 Maze* MazeCreator::createMaze() {
-	return this->maze;
+	initMaze();
+
+	Room* r1 = makeRoom(1);
+	Room* r2 = makeRoom(2);
+	Door* d0 = makeDoor(r1, r2);
+
+	p_maze->addRoom(r1);
+	p_maze->addRoom(r2);
+
+	r1->setSite(North, makeWall());
+	r1->setSite(South, makeWall());
+	r1->setSite(East, makeWall());
+	r1->setSite(West, d0);
+
+	r2->setSite(North, makeWall());
+	r2->setSite(South, makeWall());
+	r2->setSite(East, d0);
+	r2->setSite(West, makeWall());
+
+	return p_maze;
 }
 
 //factory methods:

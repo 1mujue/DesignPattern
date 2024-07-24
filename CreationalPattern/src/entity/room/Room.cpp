@@ -1,22 +1,29 @@
 #include "entity/room/Room.h"
 
 Room::Room(int id)
-	:m_roomId(id) {
+	:p_roomId(id) {
 	for (int i = 0; i < 4; ++i) {
-		m_sites[i] = nullptr;
+		p_sites[i] = nullptr;
+	}
+}
+
+Room::Room(const Room& other)
+	: p_roomId(other.p_roomId) {
+	for (int i = 0; i < 4; ++i) {
+		p_sites[i] = nullptr;
 	}
 }
 
 const int Room::getRoomId() const {
-	return this->m_roomId;
+	return this->p_roomId;
 }
 
 const MapSite* Room::getSite(const Direction& direction) {
-	return m_sites[direction];
+	return p_sites[direction];
 }
 
 void Room::setSite(const Direction& direction, MapSite* mapSite) {
-	m_sites[direction] = mapSite;
+	p_sites[direction] = mapSite;
 }
 
 void Room::enter() {
@@ -27,5 +34,9 @@ void Room::printInfo() {
 }
 
 Room* Room::clone() {
-	return nullptr;
+	return new Room(*this);
+}
+
+void Room::initialize(int roomId) {
+	p_roomId = roomId;
 }

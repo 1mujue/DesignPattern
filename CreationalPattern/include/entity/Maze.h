@@ -9,7 +9,9 @@ private:
 public:
 	Maze();
 	Maze(const char*);
+	Maze(const Maze&);
 
+	Maze* clone();
 	void addRoom(const Room*);
 	Room* getRoomById(int) const;
 	const char* getType();
