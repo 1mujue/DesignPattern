@@ -1,6 +1,6 @@
 #pragma once
-#include "flyweight/entity/Window.h"
-#include "flyweight/entity/Font.h"
+#include "entity/text/Window.h"
+#include "entity/text/Font.h"
 #include "GlyphContext.h"
 
 class Glyph {

@@ -1,7 +1,7 @@
 #pragma once
-#include "flyweight/entity/Character.h"
-#include "flyweight/entity/Row.h"
-#include "flyweight/entity/Column.h"
+#include "entity/text/Character.h"
+#include "entity/text/Row.h"
+#include "entity/text/Column.h"
 
 class GlyphFactory {
 private:

@@ -2,11 +2,14 @@
 #include "entity/shape/Shape.h"
 #include "entity/view/TextView.h"
 
-//TextView has some methods that have been implemented,
-//whileas Shape doesn't have.
+/*
+* Why does it extend TextView privately? Well, TextView is 
+* a kind of TOOL, we extend because we want to use it but we can't 
+* use it directly, and that's is why we need an Adapter!
+*/
 class TextShapeClass : public Shape, private TextView {
 public:
-	TextShapeClass();
+	TextShapeClass(const char*);
 
 	virtual void boundingBox(Point&, Point&) const;
 	virtual Manipulator* createManipulator() const;

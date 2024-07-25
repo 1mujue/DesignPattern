@@ -8,7 +8,7 @@ private:
 	WindowImpl* m_impl;
 	View* m_contents;
 public:
-	Window(View* contents);
+	Window(View*);
 
 	//handled by window
 	virtual void drawContents();

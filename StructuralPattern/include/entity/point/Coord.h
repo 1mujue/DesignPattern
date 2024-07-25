@@ -7,4 +7,5 @@ public:
 	Coord();
 
 	Coord operator+(const Coord&);
+	bool operator==(const Coord&);
 };

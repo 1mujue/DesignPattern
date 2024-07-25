@@ -3,7 +3,7 @@
 
 class ApplicationWindow : public Window {
 public:
-	ApplicationWindow();
+	ApplicationWindow(View*);
 
 	//handled by window
 	virtual void drawContents();

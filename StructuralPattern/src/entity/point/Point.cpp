@@ -1,10 +1,9 @@
 #include "entity/point/Point.h"
 
+const Point Point::zero;
+
 Point::Point(Coord bottomLeft, Coord topRight)
 	: x(bottomLeft), y(topRight) {
-	;
-}
-Point::Point() {
 	;
 }
 
@@ -19,4 +18,12 @@ void Point::setX(const Coord& tx) {
 }
 void Point::setY(const Coord& ty) {
 	y = ty;
+}
+
+void Point::draw() const {
+	;
+}
+
+bool Point::operator==(const Point& other) {
+	return this->x == other.x;
 }

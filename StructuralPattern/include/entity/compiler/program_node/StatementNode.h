@@ -3,5 +3,5 @@
 
 class StatementNode : public ProgramNode {
 public:
-	StatementNode(const char*);
+	StatementNode();
 };

@@ -3,5 +3,5 @@
 
 class ExpressionNode : public ProgramNode {
 public:
-	ExpressionNode(const char*);
+	ExpressionNode();
 };

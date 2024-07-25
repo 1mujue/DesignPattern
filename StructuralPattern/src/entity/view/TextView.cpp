@@ -3,7 +3,7 @@
 #include <iostream>
 
 TextView::TextView(const char* message)
-	: View(),m_contents(message) {
+	: View(),m_content(message) {
 	;
 }
 
@@ -22,5 +22,5 @@ void TextView::getExtent(Coord& c1, Coord& c2) const {
 	c2.setValue(ty);
 }
 bool TextView::isEmpty() const {
-	return m_contents == nullptr;
+	return m_content == nullptr;
 }

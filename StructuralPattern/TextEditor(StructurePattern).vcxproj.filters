@@ -30,10 +30,10 @@
     <ClCompile Include="src\adapter\TextShapeObject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\tool\manipulator\Manipulator.cpp">
+    <ClCompile Include="src\entity\manipulator\Manipulator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\tool\manipulator\TextManipulator.cpp">
+    <ClCompile Include="src\entity\manipulator\TextManipulator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\adapter\TextShapeClass.cpp">
@@ -54,9 +54,6 @@
     <ClCompile Include="src\entity\electric\Watt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\tool\SingleValue.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\composite\CompositeEquipment.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -66,7 +63,7 @@
     <ClCompile Include="src\composite\FloppyDisk.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\facade\CodeGenerator.cpp">
+    <ClCompile Include="src\facade\code_generator\CodeGenerator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\facade\Compiler.cpp">
@@ -90,6 +87,51 @@
     <ClCompile Include="src\proxy\Graphic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\entity\compiler\program_node\ExpressionNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\compiler\program_node\StatementNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\compiler\program_node\ProgramNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\window\AppicationWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\window\Window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\window\IconWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\window_impl\WindowImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\BorderDecorator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\Component.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\Decorator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\VisualComponent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\code_generator\RISCCodeGenerator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\Glyph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\GlyphContext.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\GlyphFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\entity\point\Point.h">
@@ -98,7 +140,7 @@
     <ClInclude Include="include\entity\shape\Shape.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\tool\manipulator\Manipulator.h">
+    <ClInclude Include="include\entity\manipulator\Manipulator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\view\TextView.h">
@@ -110,7 +152,7 @@
     <ClInclude Include="include\adapter\TextShapeClass.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\tool\manipulator\TextManipulator.h">
+    <ClInclude Include="include\entity\manipulator\TextManipulator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\adapter\TextShapeObject.h">
@@ -209,28 +251,28 @@
     <ClInclude Include="include\flyweight\Glyph.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\entity\Character.h">
+    <ClInclude Include="include\entity\text\Character.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\flyweight\GlyphContext.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\entity\Font.h">
+    <ClInclude Include="include\entity\text\Font.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\entity\Window.h">
+    <ClInclude Include="include\entity\text\Window.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\entity\BTree.h">
+    <ClInclude Include="include\entity\text\BTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\flyweight\GlyphFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\entity\Row.h">
+    <ClInclude Include="include\entity\text\Row.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\entity\Column.h">
+    <ClInclude Include="include\entity\text\Column.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\proxy\Graphic.h">
@@ -243,6 +285,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\proxy\ImageProxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\Shape_Manipulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\CodeGenerator_ProgramNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

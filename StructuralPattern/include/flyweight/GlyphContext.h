@@ -1,6 +1,6 @@
 #pragma once
-#include "flyweight/entity/BTree.h"
-#include "flyweight/entity/Font.h"
+#include "entity/text/BTree.h"
+#include "entity/text/Font.h"
 
 class GlyphContext {
 private:

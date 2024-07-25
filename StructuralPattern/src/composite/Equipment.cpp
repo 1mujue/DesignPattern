@@ -10,10 +10,10 @@ const char* Equipment::getName() {
 	return m_name;
 }
 
-Watt Equipment::getPower() { ; }
-Currency Equipment::netPrice() { ; }
-Currency Equipment::discountPrice() { ; }
+Watt Equipment::getPower() { return *(new Watt(1)); }
+Currency Equipment::netPrice() { return *(new Currency(1.0)); }
+Currency Equipment::discountPrice() { return *(new Currency(1.0)); }
 
 void Equipment::add(Equipment*) { ; }
 void Equipment::remove(Equipment*) { ; }
-Iterator<Equipment*>* Equipment::createIterator() { ; }
+Iterator<Equipment*>* Equipment::createIterator() { return nullptr; }

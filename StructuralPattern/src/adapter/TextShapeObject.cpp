@@ -1,5 +1,5 @@
 #include "adapter/TextShapeObject.h"
-#include "tool/manipulator/TextManipulator.h"
+#include "entity/manipulator/TextManipulator.h"
 
 TextShapeObject::TextShapeObject(TextView* tv) 
 	:m_textView(tv) {

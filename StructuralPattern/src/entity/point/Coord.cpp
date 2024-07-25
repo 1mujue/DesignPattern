@@ -11,3 +11,7 @@ Coord Coord::operator+(const Coord& other) {
 	ret.setValue(this->value + other.value);
 	return ret;
 }
+
+bool Coord::operator==(const Coord& other) {
+	return other.value == this->value;
+}

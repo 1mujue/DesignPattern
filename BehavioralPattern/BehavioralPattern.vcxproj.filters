@@ -30,6 +30,51 @@
     <ClCompile Include="src\chain_of_responsbility\Widget.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\command\Command.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\OpenCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\PasteCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\SimpleCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\MacroCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\Document.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tool\log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\VariableExp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\AddExp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\OrExp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\ConstantExp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\NotExp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\Context.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\BooleanExp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\chain_of_responsbility\HelpHandler.h">
@@ -42,6 +87,51 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\chain_of_responsbility\Dialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\Application.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity\Document.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\command\Command.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\command\OpenCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\command\PasteCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\command\SimpleCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\command\MacroCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tool\log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interpreter\BooleanExp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interpreter\VariableExp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interpreter\AddExp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interpreter\OrExp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interpreter\NotExp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interpreter\ConstantExp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interpreter\Context.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

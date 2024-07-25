@@ -136,12 +136,42 @@
     <ClCompile Include="src\chain_of_responsbility\Dialog.cpp" />
     <ClCompile Include="src\chain_of_responsbility\HelpHandler.cpp" />
     <ClCompile Include="src\chain_of_responsbility\Widget.cpp" />
+    <ClCompile Include="src\command\Command.cpp" />
+    <ClCompile Include="src\command\MacroCommand.cpp" />
+    <ClCompile Include="src\command\OpenCommand.cpp" />
+    <ClCompile Include="src\command\PasteCommand.cpp" />
+    <ClCompile Include="src\command\SimpleCommand.cpp" />
+    <ClCompile Include="src\entity\Application.cpp" />
+    <ClCompile Include="src\entity\Document.cpp" />
+    <ClCompile Include="src\interpreter\AddExp.cpp" />
+    <ClCompile Include="src\interpreter\BooleanExp.cpp" />
+    <ClCompile Include="src\interpreter\ConstantExp.cpp" />
+    <ClCompile Include="src\interpreter\Context.cpp" />
+    <ClCompile Include="src\interpreter\NotExp.cpp" />
+    <ClCompile Include="src\interpreter\OrExp.cpp" />
+    <ClCompile Include="src\interpreter\VariableExp.cpp" />
+    <ClCompile Include="src\tool\log.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\chain_of_responsbility\Button.h" />
     <ClInclude Include="include\chain_of_responsbility\Dialog.h" />
     <ClInclude Include="include\chain_of_responsbility\HelpHandler.h" />
     <ClInclude Include="include\chain_of_responsbility\Widget.h" />
+    <ClInclude Include="include\command\Command.h" />
+    <ClInclude Include="include\command\MacroCommand.h" />
+    <ClInclude Include="include\command\OpenCommand.h" />
+    <ClInclude Include="include\command\PasteCommand.h" />
+    <ClInclude Include="include\command\SimpleCommand.h" />
+    <ClInclude Include="include\entity\Application.h" />
+    <ClInclude Include="include\interpreter\AddExp.h" />
+    <ClInclude Include="include\interpreter\ConstantExp.h" />
+    <ClInclude Include="include\entity\Document.h" />
+    <ClInclude Include="include\interpreter\BooleanExp.h" />
+    <ClInclude Include="include\interpreter\Context.h" />
+    <ClInclude Include="include\interpreter\NotExp.h" />
+    <ClInclude Include="include\interpreter\OrExp.h" />
+    <ClInclude Include="include\interpreter\VariableExp.h" />
+    <ClInclude Include="include\tool\log.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

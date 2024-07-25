@@ -4,10 +4,10 @@
 
 class Scanner {
 private:
-	std::istream m_inputStream;
+	std::istream& m_inputStream;
 public:
 	Scanner(std::istream&);
 	virtual ~Scanner();
 
-	virtual Token& Scan();
+	virtual Token* Scan();
 };

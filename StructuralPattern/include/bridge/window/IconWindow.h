@@ -5,7 +5,7 @@ class IconWindow : public Window {
 private:
 	const char* m_bitmapName;
 public:
-	IconWindow();
+	IconWindow(View*);
 
 	//handled by window
 	virtual void drawContents();

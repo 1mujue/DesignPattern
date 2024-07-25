@@ -17,5 +17,5 @@ void Compiler::compile(std::istream& is, ByteCodeStream& bcs) {
 
 	RISCCodeGenerator generator(bcs);
 	ProgramNode* parseTree = builder.getRootNode();
-	parseTree->traverse(generator);
+	parseTree->traverse(&generator);
 }

@@ -1,10 +1,12 @@
 #include "adapter/TextShapeClass.h"
-#include "tool/manipulator/TextManipulator.h"
+#include "entity/manipulator/TextManipulator.h"
 
 
-TextShapeClass::TextShapeClass() {
+TextShapeClass::TextShapeClass(const char* content) 
+	:TextView(content) {
 	;
 }
+
 
 void TextShapeClass::boundingBox(Point& bottomLeft, Point& topRight) const {
 	Coord bottom, left, width, height;

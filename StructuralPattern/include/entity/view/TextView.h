@@ -4,7 +4,7 @@
 
 class TextView : public View {
 private: 
-	const char* m_contents;
+	const char* m_content;
 public:
 	TextView(const char*);
 

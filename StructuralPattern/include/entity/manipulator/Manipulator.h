@@ -1,5 +1,5 @@
 #pragma once
-#include "entity/shape/Shape.h"
+#include "entity/Shape_Manipulator.h"
 
 class Manipulator {
 protected:

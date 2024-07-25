@@ -1,6 +1,6 @@
 #pragma once
 #include "entity/point/Point.h"
-#include "tool/manipulator/Manipulator.h"
+#include "entity/Shape_Manipulator.h"
 
 class Shape {
 public:

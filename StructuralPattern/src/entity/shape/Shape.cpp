@@ -5,7 +5,9 @@ Shape::Shape(){
 }
 
 void Shape::boundingBox(Point& bottomLeft, Point& topRight) const {
+	;
 }
-Manipulator* Shape::createManipulator() const {
 
+Manipulator* Shape::createManipulator() const {
+	return nullptr;
 }

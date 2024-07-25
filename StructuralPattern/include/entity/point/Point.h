@@ -7,7 +7,6 @@ private:
 	Coord x, y;
 public:
 	Point(Coord = 0, Coord = 0);
-	Point();
 
 	Coord& getX();
 	Coord& getY();
@@ -17,3 +16,4 @@ public:
 
 	bool operator==(const Point&);
 };
+
