@@ -25,11 +25,16 @@ Adaptee: Text Shape
 
 Adapter: Text Shape Class, Text Shape Object
 
-Client:
+Client: Demonstrator
 
 
 
 # TIPS
 
-1. Two-way adapter: In this case, Target is ALSO an "Adaptee" of Adaptee, and Adaptee is ALSO a "Target" of Target. How can we implement this? Well, we just need to make Adapter extend Target and Adaptee **BOTH PUBLIC**(of course, we can also make Adapter contain references of Target and Adaptee), and that will handle the problem.
-2. Pluggable adapter:
+1. **Two-way adapter**: In this case, Target is ALSO an "Adaptee" of Adaptee, and Adaptee is ALSO a "Target" of Target. How can we implement this? Well, we just need to make Adapter extend Target and Adaptee **BOTH PUBLIC**(of course, we can also make Adapter contain references of Target and Adaptee), and that will handle the problem.
+
+2. **Pluggable adapter**: Sometimes, we don't want to adapt **ONLY ONE** Adaptee. If there are a lot of Adaptees, and we want to make our Adapter able to adapt all of them **without CHANGING methods defined in target**, then the Adapter is a **PLUGGABLE ADAPTER.** 
+   For example, we want to display TREE structure. There are two adaptees. The first adaptee is based on file system, and the method to get child node is `getSubDirectory()`. The second adaptee is based on inheritance, and the method to get child node is `getDerivedClass()`. We wish our Adapter could match both adaptees. 
+   At the very beginning, you should find a **NARROW INTERFACE** of Adaptees. In our case, such a narrow interface should contain two methods: **demonstrate the current node, and get child nodes of the current node.** Then, we could make Adapter a pluggable adapter:
+
+   Make a declaration of methods in narrow interface **in Target**. Adapter would **determine to use which Adpatee**, but we don't need to care about it. For example, if we want to get the child node, we may want to call a method like this in Adapter: `getChildNode()`, but we don't care how to get the child node, `getSubDirectory()` or `getDerivedClass()`, that would be the job of Adapter.

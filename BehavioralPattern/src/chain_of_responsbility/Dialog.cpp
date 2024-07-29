@@ -1,7 +1,7 @@
 #include "chain_of_responsbility/Dialog.h"
 
 Dialog::Dialog(HelpHandler* helpHandler, Topic topic)
-	: Widget(0) {
+	: CORWidget(0) {
 	setHandler(helpHandler, topic);
 }
 

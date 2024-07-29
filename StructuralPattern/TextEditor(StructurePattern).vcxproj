@@ -133,12 +133,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\adapter\TextShapeObject.cpp" />
-    <ClCompile Include="src\adapter\TextShapeClass.cpp" />
+    <ClCompile Include="src\adapter\adapters\TextShapeObject.cpp" />
+    <ClCompile Include="src\adapter\adapters\TextShapeClass.cpp" />
     <ClCompile Include="src\bridge\window\AppicationWindow.cpp" />
     <ClCompile Include="src\bridge\window\IconWindow.cpp" />
     <ClCompile Include="src\bridge\window\Window.cpp" />
+    <ClCompile Include="src\bridge\window_impl\PMWindowImpl.cpp" />
     <ClCompile Include="src\bridge\window_impl\WindowImpl.cpp" />
+    <ClCompile Include="src\bridge\window_impl\XWindowImpl.cpp" />
     <ClCompile Include="src\composite\CompositeEquipment.cpp" />
     <ClCompile Include="src\composite\Equipment.cpp" />
     <ClCompile Include="src\composite\FloppyDisk.cpp" />
@@ -146,6 +148,7 @@
     <ClCompile Include="src\decorator\Component.cpp" />
     <ClCompile Include="src\decorator\Decorator.cpp" />
     <ClCompile Include="src\decorator\VisualComponent.cpp" />
+    <ClCompile Include="src\Demonstrator.cpp" />
     <ClCompile Include="src\entity\compiler\program_node\ExpressionNode.cpp" />
     <ClCompile Include="src\entity\compiler\program_node\ProgramNode.cpp" />
     <ClCompile Include="src\entity\compiler\program_node\StatementNode.cpp" />
@@ -153,9 +156,8 @@
     <ClCompile Include="src\entity\electric\Watt.cpp" />
     <ClCompile Include="src\entity\point\Coord.cpp" />
     <ClCompile Include="src\entity\point\Point.cpp" />
-    <ClCompile Include="src\entity\shape\Shape.cpp" />
-    <ClCompile Include="src\entity\view\TextView.cpp" />
-    <ClCompile Include="src\entity\view\View.cpp" />
+    <ClCompile Include="src\adapter\targets\Shape.cpp" />
+    <ClCompile Include="src\adapter\adaptees\TextView.cpp" />
     <ClCompile Include="src\facade\code_generator\CodeGenerator.cpp" />
     <ClCompile Include="src\facade\code_generator\RISCCodeGenerator.cpp" />
     <ClCompile Include="src\facade\Compiler.cpp" />
@@ -169,22 +171,25 @@
     <ClCompile Include="src\proxy\Image.cpp" />
     <ClCompile Include="src\proxy\ImageProxy.cpp" />
     <ClCompile Include="src\tool\log.cpp" />
-    <ClCompile Include="src\entity\manipulator\Manipulator.cpp" />
-    <ClCompile Include="src\entity\manipulator\TextManipulator.cpp" />
+    <ClCompile Include="src\adapter\manipulators\Manipulator.cpp" />
+    <ClCompile Include="src\adapter\manipulators\TextManipulator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\adapter\TextShapeClass.h" />
-    <ClInclude Include="include\adapter\TextShapeObject.h" />
+    <ClInclude Include="include\adapter\adapters\TextShapeClass.h" />
+    <ClInclude Include="include\adapter\adapters\TextShapeObject.h" />
     <ClInclude Include="include\bridge\window\ApplicationWindow.h" />
     <ClInclude Include="include\bridge\window\IconWindow.h" />
+    <ClInclude Include="include\bridge\window_impl\PMWindowImpl.h" />
     <ClInclude Include="include\bridge\window_impl\WindowImpl.h" />
+    <ClInclude Include="include\bridge\window_impl\XWindowImpl.h" />
     <ClInclude Include="include\composite\Bus.h" />
     <ClInclude Include="include\composite\Chassis.h" />
     <ClInclude Include="include\decorator\BorderDecorator.h" />
     <ClInclude Include="include\decorator\Decorator.h" />
     <ClInclude Include="include\decorator\VisualComponent.h" />
     <ClInclude Include="include\decorator\Component.h" />
-    <ClInclude Include="include\entity\CodeGenerator_ProgramNode.h" />
+    <ClInclude Include="include\Demonstrator.h" />
+    <ClInclude Include="include\connection\CP.h" />
     <ClInclude Include="include\entity\electric\Currency.h" />
     <ClInclude Include="include\entity\electric\Watt.h" />
     <ClInclude Include="include\composite\CompositeEquipment.h" />
@@ -194,7 +199,7 @@
     <ClInclude Include="include\entity\compiler\program_node\ExpressionNode.h" />
     <ClInclude Include="include\entity\compiler\program_node\StatementNode.h" />
     <ClInclude Include="include\entity\compiler\Token.h" />
-    <ClInclude Include="include\entity\Shape_Manipulator.h" />
+    <ClInclude Include="include\connection\MS.h" />
     <ClInclude Include="include\facade\code_generator\CodeGenerator.h" />
     <ClInclude Include="include\facade\Compiler.h" />
     <ClInclude Include="include\facade\Parser.h" />
@@ -216,16 +221,18 @@
     <ClInclude Include="include\proxy\Image.h" />
     <ClInclude Include="include\proxy\ImageProxy.h" />
     <ClInclude Include="include\tool\SingleValue.h" />
-    <ClInclude Include="include\entity\view\View.h" />
     <ClInclude Include="include\bridge\window\Window.h" />
     <ClInclude Include="include\tool\Iterator.h" />
     <ClInclude Include="include\tool\log.h" />
-    <ClInclude Include="include\entity\manipulator\Manipulator.h" />
+    <ClInclude Include="include\adapter\manipulators\Manipulator.h" />
     <ClInclude Include="include\entity\point\Coord.h" />
     <ClInclude Include="include\entity\point\Point.h" />
-    <ClInclude Include="include\entity\shape\Shape.h" />
-    <ClInclude Include="include\entity\view\TextView.h" />
-    <ClInclude Include="include\entity\manipulator\TextManipulator.h" />
+    <ClInclude Include="include\adapter\targets\Shape.h" />
+    <ClInclude Include="include\adapter\adaptees\TextView.h" />
+    <ClInclude Include="include\adapter\manipulators\TextManipulator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\adapter\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,8 @@
 #pragma once
 #include "Widget.h"
-class Button : public Widget {
+class Button : public CORWidget {
 public:
-	Button(Widget*, Topic = NO_HELP_TOPIC);
+	Button(CORWidget*, Topic = NO_HELP_TOPIC);
 
 	virtual void handleHelp();
 };

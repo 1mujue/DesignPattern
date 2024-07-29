@@ -6,7 +6,7 @@ NotExp::NotExp(BooleanExp* be1)
 }
 NotExp::~NotExp() { ; }
 
-bool NotExp::evaluate(Context& context) {
+bool NotExp::evaluate(Context* context) {
 	return !m_operand1->evaluate(context);
 }
 BooleanExp* NotExp::replace(const char* name, BooleanExp* exp) {

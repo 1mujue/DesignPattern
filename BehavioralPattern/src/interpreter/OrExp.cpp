@@ -6,7 +6,7 @@ OrExp::OrExp(BooleanExp* be1, BooleanExp* be2)
 }
 OrExp::~OrExp() { ; }
 
-bool OrExp::evaluate(Context& context) {
+bool OrExp::evaluate(Context* context) {
 	return m_operand1->evaluate(context) || m_operand2->evaluate(context);
 }
 BooleanExp* OrExp::replace(const char* name, BooleanExp* exp) {

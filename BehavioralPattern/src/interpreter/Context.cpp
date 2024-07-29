@@ -1,4 +1,5 @@
-#include "interpreter/BooleanExp.h"
+#include "interpreter/VariableExp.h"
+#include "interpreter/Context.h"
 
 bool Context::lookup(const char* name) const {
 	return m_variableMap.find(name)->second;

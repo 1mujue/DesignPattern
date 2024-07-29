@@ -1,16 +1,17 @@
 #include "interpreter/VariableExp.h"
+#include "interpreter/Context.h"
 #include <string>
 
 VariableExp::VariableExp(Context* context,const char* name)
 	: BooleanExp() {
-	m_name = strdup(name);
+	m_name = _strdup(name);
 	m_context = context;
 	
 }
 VariableExp::~VariableExp() { ; }
 
-bool VariableExp::evaluate(Context& context) {
-	return context.lookup(m_name);
+bool VariableExp::evaluate(Context* context) {
+	return context->lookup(m_name);
 }
 BooleanExp* VariableExp::replace(const char* name, BooleanExp* exp) {
 	if (strcmp(m_name, name) == 0) {

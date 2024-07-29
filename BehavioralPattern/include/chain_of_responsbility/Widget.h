@@ -1,8 +1,8 @@
 #pragma once
 #include "HelpHandler.h"
-class Widget :public HelpHandler {
+class CORWidget :public HelpHandler {
 private:
-	Widget* m_parent;
+	CORWidget* m_parent;
 protected:
-	Widget(Widget*, Topic = NO_HELP_TOPIC);
+	CORWidget(CORWidget*, Topic = NO_HELP_TOPIC);
 };

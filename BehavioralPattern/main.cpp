@@ -27,8 +27,10 @@ int main() {
 	context->assign(x, false);
 	context->assign(y, true);
 
-	bool result = exp->evaluate(*context);
+	bool result = exp->evaluate(context);
 
 	logMessage("the result of expression is:", ' ');
 	std::cout << result << std::endl;
+
+	std::cin.get();
 }

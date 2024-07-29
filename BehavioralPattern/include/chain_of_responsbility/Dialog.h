@@ -1,7 +1,7 @@
 #pragma once
 #include "Widget.h"
 
-class Dialog : public Widget {
+class Dialog : public CORWidget {
 public:
 	Dialog(HelpHandler*, Topic = NO_HELP_TOPIC);
 	

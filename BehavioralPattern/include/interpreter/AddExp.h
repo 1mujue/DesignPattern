@@ -6,7 +6,7 @@ public:
 	AddExp(BooleanExp*, BooleanExp*);
 	virtual ~AddExp();
 
-	virtual bool evaluate(Context&);
+	virtual bool evaluate(Context*);
 	virtual BooleanExp* replace(const char*, BooleanExp*);
 	virtual BooleanExp* copy() const;
 private:

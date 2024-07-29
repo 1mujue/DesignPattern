@@ -1,25 +1,32 @@
 #include "bridge/window/ApplicationWindow.h"
+#include "tool/log.h"
 
-ApplicationWindow::ApplicationWindow(View* view)
-	: Window(view) {
+ApplicationWindow::ApplicationWindow(WindowImpl* impl)
+	:Window(impl) {
 	;
 }
 
-//handled by window
-void ApplicationWindow::drawContents() { ; }
-
-void ApplicationWindow::open() { ; }
-void ApplicationWindow::close() { ; }
-void ApplicationWindow::iconify() { ; }
-void ApplicationWindow::deiconify() { ; }
-
 //handled by windowimpl
-void ApplicationWindow::setOrigin(const Point&) { ; }
-void ApplicationWindow::setExtent(const Point&) { ; }
-void ApplicationWindow::raise() { ; }
-void ApplicationWindow::lower() { ; }
+void ApplicationWindow::setOrigin() {
+	application();
+	getWindowImpl()->setOriginImpl();
+}
 
-void ApplicationWindow::drawLine(const Point&, const Point&) { ; }
-void ApplicationWindow::drawRect(const Point&, const Point&) { ; }
-void ApplicationWindow::drawPolygon(const Point*, int) { ; }
-void ApplicationWindow::drawText(const char*, const Point&) { ; }
+void ApplicationWindow::setExtent() {
+	application();
+	getWindowImpl()->setExtentImpl();
+}
+
+void ApplicationWindow::drawRect() {
+	application();
+	getWindowImpl()->drawRectImpl();
+}
+
+void ApplicationWindow::drawText() {
+	application();
+	getWindowImpl()->drawTextImpl();
+}
+
+void ApplicationWindow::application() {
+	logMessage("in application window...");
+}

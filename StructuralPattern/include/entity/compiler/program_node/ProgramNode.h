@@ -1,5 +1,5 @@
 #pragma once
-#include "entity/CodeGenerator_ProgramNode.h"
+#include "connection/CP.h"
 
 class ProgramNode {
 protected:

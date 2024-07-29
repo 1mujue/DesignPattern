@@ -1,7 +1,7 @@
 #include "chain_of_responsbility/Button.h"
 
-Button::Button(Widget* widget, Topic topic) 
-	:Widget(widget, topic) {
+Button::Button(CORWidget* widget, Topic topic) 
+	:CORWidget(widget, topic) {
 	;
 }
 void Button::handleHelp() {

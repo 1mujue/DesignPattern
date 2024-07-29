@@ -24,25 +24,22 @@
     <ClCompile Include="src\entity\point\Coord.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\shape\Shape.cpp">
+    <ClCompile Include="src\adapter\targets\Shape.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\adapter\TextShapeObject.cpp">
+    <ClCompile Include="src\adapter\adapters\TextShapeObject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\manipulator\Manipulator.cpp">
+    <ClCompile Include="src\adapter\manipulators\Manipulator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\manipulator\TextManipulator.cpp">
+    <ClCompile Include="src\adapter\manipulators\TextManipulator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\adapter\TextShapeClass.cpp">
+    <ClCompile Include="src\adapter\adapters\TextShapeClass.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\view\View.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\entity\view\TextView.cpp">
+    <ClCompile Include="src\adapter\adaptees\TextView.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\tool\log.cpp">
@@ -132,36 +129,42 @@
     <ClCompile Include="src\flyweight\GlyphFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Demonstrator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\window_impl\XWindowImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\window_impl\PMWindowImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\entity\point\Point.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\shape\Shape.h">
+    <ClInclude Include="include\adapter\targets\Shape.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\manipulator\Manipulator.h">
+    <ClInclude Include="include\adapter\manipulators\Manipulator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\view\TextView.h">
+    <ClInclude Include="include\adapter\adaptees\TextView.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\point\Coord.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\adapter\TextShapeClass.h">
+    <ClInclude Include="include\adapter\adapters\TextShapeClass.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\manipulator\TextManipulator.h">
+    <ClInclude Include="include\adapter\manipulators\TextManipulator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\adapter\TextShapeObject.h">
+    <ClInclude Include="include\adapter\adapters\TextShapeObject.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\bridge\window\Window.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\entity\view\View.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\bridge\window_impl\WindowImpl.h">
@@ -287,11 +290,23 @@
     <ClInclude Include="include\proxy\ImageProxy.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\Shape_Manipulator.h">
+    <ClInclude Include="include\connection\MS.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\CodeGenerator_ProgramNode.h">
+    <ClInclude Include="include\connection\CP.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\Demonstrator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bridge\window_impl\XWindowImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bridge\window_impl\PMWindowImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\adapter\README.md" />
   </ItemGroup>
 </Project>

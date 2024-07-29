@@ -1,24 +1,27 @@
 #include "bridge/window/Window.h"
 
-Window::Window(View* view)
-	:m_contents(view) {
+Window::Window(WindowImpl* impl)
+	:m_impl(impl) {
 	;
 }
 
-void Window::drawContents() { ; }
+void Window::setOrigin() {
+	m_impl->setOriginImpl();
+}
 
-void Window::open() { ; }
-void Window::close() { ; }
-void Window::iconify() { ; }
-void Window::deiconify() { ; }
+void Window::setExtent() {
+	m_impl->setExtentImpl();
+}
 
-//handled by windowimpl
-void Window::setOrigin(const Point&) { ; }
-void Window::setExtent(const Point&) { ; }
-void Window::raise() { ; }
-void Window::lower() { ; }
+void Window::drawRect() {
+	m_impl->drawRectImpl();
+}
 
-void Window::drawLine(const Point&, const Point&) { ; }
-void Window::drawRect(const Point&, const Point&) { ; }
-void Window::drawPolygon(const Point*, int) { ; }
-void Window::drawText(const char*, const Point&) { ; }
+void Window::drawText() {
+	m_impl->drawTextImpl();
+}
+
+WindowImpl* Window::getWindowImpl() {
+	return m_impl;
+}
+
