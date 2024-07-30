@@ -1,7 +1,10 @@
 #pragma once
-#include "abstract_factory/MazeFactory.h"
+#include "prototype/prototypes/Door.h"
+#include "prototype/prototypes/Wall.h"
+#include "prototype/prototypes/Maze.h"
+#include "prototype/prototypes/Room.h"
 
-class MazePrototypeFactory : public MazeFactory {
+class MazePrototypeFactory {
 private:
 	//prototypes.
 	//we can pass in different type of prototype to "create" a new class,

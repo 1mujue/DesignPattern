@@ -31,3 +31,4 @@ Concrete Implementor: XWindow Impl, PMWindow Impl
 # TIPS
 
 1. You could get the right Concrete Implementor by Abstract Factory Pattern. 
+1. Please mind the difference between Adapter Pattern and Bridge Pattern. In Adapter Pattern, the Adaptee knows **NOTHING** about Target, and that's why we need an Adapter, whereas in Bridge Pattern, the Implementor knows **WHAT Abstraction declared** in advance.

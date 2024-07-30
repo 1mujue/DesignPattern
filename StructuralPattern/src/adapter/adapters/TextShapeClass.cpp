@@ -1,5 +1,5 @@
 #include "adapter/adapters/TextShapeClass.h"
-#include "adapter/manipulators/TextManipulator.h"
+#include "entity/manipulators/TextManipulator.h"
 
 TextShapeClass::TextShapeClass(const char* content) 
 	:TextView(content) {

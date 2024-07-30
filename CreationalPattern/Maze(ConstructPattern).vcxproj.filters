@@ -42,10 +42,10 @@
     <ClInclude Include="include\entity\door\EnchantedDoor.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\abstract_factory\BombMazeFactory.h">
+    <ClInclude Include="include\abstract_factory\concrete_factories\BombMazeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\abstract_factory\EnchantedMazeFactory.h">
+    <ClInclude Include="include\abstract_factory\concrete_factories\EnchantedMazeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\room\BombRoom.h">
@@ -57,16 +57,16 @@
     <ClInclude Include="include\entity\Maze.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\MazeGame.h">
+    <ClInclude Include="include\Demonstrator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\builder\MazeBuilder.h">
+    <ClInclude Include="include\builder\builders\MazeBuilder.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\builder\StandardMazeBuilder.h">
+    <ClInclude Include="include\builder\concrete_builders\StandardMazeBuilder.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\builder\CountingMazeBuilder.h">
+    <ClInclude Include="include\builder\concrete_builders\CountingMazeBuilder.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\type\Enchanted.h">
@@ -75,25 +75,100 @@
     <ClInclude Include="include\entity\type\Bomb.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\factory_method\MazeCreator.h">
+    <ClInclude Include="include\factory_method\creators\MazeCreator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\factory_method\BombMazeCreator.h">
+    <ClInclude Include="include\factory_method\concrete_creators\BombMazeCreator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\factory_method\EnchantedMazeCreator.h">
+    <ClInclude Include="include\factory_method\concrete_creators\EnchantedMazeCreator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\prototype\MazePrototypeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\singleton\SingletonMazeFactory.h">
+    <ClInclude Include="include\singleton\singletons\SingletonMazeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\singleton\SingletonBombMazeFactory.h">
+    <ClInclude Include="include\singleton\singletons\SingletonBombMazeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\singleton\SingletonEnchantedMazeFactory.h">
+    <ClInclude Include="include\singleton\singletons\SingletonEnchantedMazeFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\abstract_products\Wall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\abstract_products\Room.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\abstract_products\Door.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\concrete_products\BombRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\concrete_products\EnchantedRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\concrete_products\BombWall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\concrete_products\EnchantedDoor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\abstract_factory\abstract_products\Maze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\builder\products\Maze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\products\Door.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\products\Maze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\products\Room.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\products\Wall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\concrete_products\BombRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\concrete_products\BombWall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\concrete_products\EnchantedDoor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\factory_method\concrete_products\EnchantedRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\prototypes\Door.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\prototypes\Maze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\prototypes\Room.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\prototypes\Wall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\concrete_protoypes\BombRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\concrete_protoypes\BombWall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\concrete_protoypes\EnchantedDoor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prototype\concrete_protoypes\EnchantedRoom.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -101,7 +176,7 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="include\abstract_factory\MazeFactory.h">
+    <ClCompile Include="include\abstract_factory\abstract_factories\MazeFactory.h">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\entity\room\Room.cpp">
@@ -113,7 +188,7 @@
     <ClCompile Include="src\entity\wall\Wall.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\abstract_factory\MazeFatory.cpp">
+    <ClCompile Include="src\abstract_factory\abstract_factories\MazeFatory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\tool\log.cpp">
@@ -125,10 +200,10 @@
     <ClCompile Include="src\entity\door\EnchantedDoor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\abstract_factory\BombMazeFactory.cpp">
+    <ClCompile Include="src\abstract_factory\concrete_factories\BombMazeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\abstract_factory\EnchantedMazeFactory.cpp">
+    <ClCompile Include="src\abstract_factory\concrete_factories\EnchantedMazeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\entity\wall\BombWall.cpp">
@@ -140,16 +215,16 @@
     <ClCompile Include="src\entity\Maze.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\MazeGame.cpp">
+    <ClCompile Include="src\Demonstrator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\builder\StandardMazeBuilder.cpp">
+    <ClCompile Include="src\builder\concrete_builders\StandardMazeBuilder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\builder\CountingMazeBuilder.cpp">
+    <ClCompile Include="src\builder\concrete_builders\CountingMazeBuilder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\builder\Builder.cpp">
+    <ClCompile Include="src\builder\builders\Builder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\entity\type\Bomb.cpp">
@@ -158,25 +233,25 @@
     <ClCompile Include="src\entity\type\Enchanted.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\factory_method\MazeCreator.cpp">
+    <ClCompile Include="src\factory_method\creators\MazeCreator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\factory_method\BombMazeCreator.cpp">
+    <ClCompile Include="src\factory_method\concrete_creators\BombMazeCreator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\factory_method\EnchantedMazeCreator.cpp">
+    <ClCompile Include="src\factory_method\concrete_creators\EnchantedMazeCreator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\prototype\MazePrototypeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\singleton\SingletonMazeFactory.cpp">
+    <ClCompile Include="src\singleton\singletons\SingletonMazeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\singleton\SingletonBombMazeFactory.cpp">
+    <ClCompile Include="src\singleton\singletons\SingletonBombMazeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\singleton\SingletonEnchantedMazeFactory.cpp">
+    <ClCompile Include="src\singleton\singletons\SingletonEnchantedMazeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

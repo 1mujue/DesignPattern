@@ -8,7 +8,7 @@ public:
 
 private:
 	Compositor* m_compositor;
-	Component* m_component;
+	ConcreteVisualComponent* m_component;
 	int m_componentCount;
 	int m_lineWidth;
 	int* m_lineBreaks;

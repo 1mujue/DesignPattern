@@ -6,15 +6,11 @@ Image::Image(const char* filename)
 }
 Image::~Image() { ; }
 
-void Image::draw(const Point& point) {
-	point.draw();
-}
-void Image::handleMouse(Event& event) {
+void Image::draw() {
 	;
 }
-
-const Point& Image::getExtent() {
-	return Point::zero;
+void Image::handleMouse() {
+	;
 }
 
 void Image::load(std::istream&) {

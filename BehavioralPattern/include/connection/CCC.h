@@ -1,4 +1,4 @@
 #pragma once
-class Component;
+class ConcreteVisualComponent;
 class Composition;
 class Compositor;

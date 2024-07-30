@@ -18,22 +18,16 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\point\Point.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\entity\point\Coord.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\adapter\targets\Shape.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\adapter\adapters\TextShapeObject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\adapter\manipulators\Manipulator.cpp">
+    <ClCompile Include="src\entity\manipulators\Manipulator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\adapter\manipulators\TextManipulator.cpp">
+    <ClCompile Include="src\entity\manipulators\TextManipulator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\adapter\adapters\TextShapeClass.cpp">
@@ -45,34 +39,28 @@
     <ClCompile Include="src\tool\log.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\electric\Currency.cpp">
+    <ClCompile Include="src\composite\composites\CompositeEquipment.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\electric\Watt.cpp">
+    <ClCompile Include="src\composite\compoents\Equipment.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\composite\CompositeEquipment.cpp">
+    <ClCompile Include="src\composite\leafs\FloppyDisk.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\composite\Equipment.cpp">
+    <ClCompile Include="src\facade\sub-system_classes\code_generators\CodeGenerator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\composite\FloppyDisk.cpp">
+    <ClCompile Include="src\facade\facades\Compiler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\facade\code_generator\CodeGenerator.cpp">
+    <ClCompile Include="src\facade\sub-system_classes\Parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\facade\Compiler.cpp">
+    <ClCompile Include="src\facade\sub-system_classes\Scanner.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\facade\Parser.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\facade\Scanner.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\facade\ProgramNodeBuilder.cpp">
+    <ClCompile Include="src\facade\sub-system_classes\ProgramNodeBuilder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\proxy\Image.cpp">
@@ -93,31 +81,31 @@
     <ClCompile Include="src\entity\compiler\program_node\ProgramNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\bridge\window\AppicationWindow.cpp">
+    <ClCompile Include="src\bridge\refined_abstractions\AppicationWindow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\bridge\window\Window.cpp">
+    <ClCompile Include="src\bridge\abstractions\Window.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\bridge\window\IconWindow.cpp">
+    <ClCompile Include="src\bridge\refined_abstractions\IconWindow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\bridge\window_impl\WindowImpl.cpp">
+    <ClCompile Include="src\bridge\implementors\WindowImpl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\decorator\BorderDecorator.cpp">
+    <ClCompile Include="src\decorator\concrete_decorators\BorderDecorator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\decorator\Component.cpp">
+    <ClCompile Include="src\decorator\concrete_components\ConcreteVisualComponent.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\decorator\Decorator.cpp">
+    <ClCompile Include="src\decorator\decorators\Decorator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\decorator\VisualComponent.cpp">
+    <ClCompile Include="src\decorator\components\VisualComponent.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\facade\code_generator\RISCCodeGenerator.cpp">
+    <ClCompile Include="src\facade\sub-system_classes\code_generators\RISCCodeGenerator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\flyweight\Glyph.cpp">
@@ -132,105 +120,102 @@
     <ClCompile Include="src\Demonstrator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\bridge\window_impl\XWindowImpl.cpp">
+    <ClCompile Include="src\bridge\concrete_implementors\XWindowImpl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\bridge\window_impl\PMWindowImpl.cpp">
+    <ClCompile Include="src\bridge\concrete_implementors\PMWindowImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\leafs\Bus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\composites\Chassis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\concrete_decorators\ScrollDecorator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\entity\point\Point.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\adapter\targets\Shape.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\adapter\manipulators\Manipulator.h">
+    <ClInclude Include="include\entity\manipulators\Manipulator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\adapter\adaptees\TextView.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\point\Coord.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\adapter\adapters\TextShapeClass.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\adapter\manipulators\TextManipulator.h">
+    <ClInclude Include="include\entity\manipulators\TextManipulator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\adapter\adapters\TextShapeObject.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\bridge\window\Window.h">
+    <ClInclude Include="include\bridge\abstractions\Window.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\bridge\window_impl\WindowImpl.h">
+    <ClInclude Include="include\bridge\implementors\WindowImpl.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\bridge\window\ApplicationWindow.h">
+    <ClInclude Include="include\bridge\refined_abstractions\ApplicationWindow.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\bridge\window\IconWindow.h">
+    <ClInclude Include="include\bridge\refined_abstractions\IconWindow.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\tool\log.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\composite\Equipment.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\entity\electric\Watt.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\entity\electric\Currency.h">
+    <ClInclude Include="include\composite\components\Equipment.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\tool\Iterator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\composite\FloppyDisk.h">
+    <ClInclude Include="include\composite\leafs\FloppyDisk.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\composite\CompositeEquipment.h">
+    <ClInclude Include="include\composite\composites\CompositeEquipment.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\tool\SingleValue.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\composite\Chassis.h">
+    <ClInclude Include="include\composite\composites\Chassis.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\composite\Bus.h">
+    <ClInclude Include="include\composite\leafs\Bus.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\decorator\VisualComponent.h">
+    <ClInclude Include="include\decorator\components\VisualComponent.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\decorator\Decorator.h">
+    <ClInclude Include="include\decorator\decorators\Decorator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\decorator\BorderDecorator.h">
+    <ClInclude Include="include\decorator\concrete_decorators\BorderDecorator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\decorator\Component.h">
+    <ClInclude Include="include\decorator\concrete_components\ConcreteVisualComponent.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\facade\Scanner.h">
+    <ClInclude Include="include\facade\sub-system_classes\Scanner.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\facade\Parser.h">
+    <ClInclude Include="include\facade\sub-system_classes\Parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\facade\ProgramNodeBuilder.h">
+    <ClInclude Include="include\facade\sub-system_classes\ProgramNodeBuilder.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\compiler\program_node\ProgramNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\facade\code_generator\CodeGenerator.h">
+    <ClInclude Include="include\facade\sub-system_classes\code_generators\CodeGenerator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\compiler\program_node\StatementNode.h">
@@ -245,10 +230,10 @@
     <ClInclude Include="include\entity\compiler\ByteCodeStream.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\facade\Compiler.h">
+    <ClInclude Include="include\facade\facades\Compiler.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\facade\code_generator\RISCCodeGenerator.h">
+    <ClInclude Include="include\facade\sub-system_classes\code_generators\RISCCodeGenerator.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\flyweight\Glyph.h">
@@ -281,9 +266,6 @@
     <ClInclude Include="include\proxy\Graphic.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\Event.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\proxy\Image.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -299,14 +281,19 @@
     <ClInclude Include="include\Demonstrator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\bridge\window_impl\XWindowImpl.h">
+    <ClInclude Include="include\bridge\concrete_implementors\XWindowImpl.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\bridge\window_impl\PMWindowImpl.h">
+    <ClInclude Include="include\bridge\concrete_implementors\PMWindowImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\decorator\concrete_decorators\ScrollDecorator.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="include\adapter\README.md" />
+    <None Include="include\composite\README.md" />
+    <None Include="include\decorator\README.md" />
   </ItemGroup>
 </Project>

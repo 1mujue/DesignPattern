@@ -8,10 +8,8 @@ public:
 	Image(const char*);
 	virtual ~Image();
 
-	virtual void draw(const Point&);
-	virtual void handleMouse(Event&);
-
-	virtual const Point& getExtent();
+	virtual void draw();
+	virtual void handleMouse();
 
 	virtual void load(std::istream&);
 	virtual void save(std::ostream&);

@@ -1,5 +1,4 @@
 #pragma once
-#include "entity/point/Point.h"
 #include "connection/MS.h"
 
 class Shape {
