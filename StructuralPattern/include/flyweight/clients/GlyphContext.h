@@ -1,11 +1,10 @@
 #pragma once
 #include "entity/text/BTree.h"
-#include "entity/text/Font.h"
 
 class GlyphContext {
 private:
 	int m_index;
-	BTree* m_fonts;
+	BTree* m_trees;
 public:
 	GlyphContext();
 	virtual ~GlyphContext();
@@ -13,6 +12,6 @@ public:
 	virtual void next(int = 1);
 	virtual void insert(int = 1);
 
-	virtual Font* getFont();
 	virtual void setFont(Font*, int = 1);
+	virtual Font* getFont();
 };

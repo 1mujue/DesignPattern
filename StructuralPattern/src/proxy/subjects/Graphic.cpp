@@ -1,4 +1,4 @@
-#include "proxy/Graphic.h"
+#include "proxy/subjects/Graphic.h"
 
 Graphic::Graphic() { ; }
 

@@ -1,20 +1,25 @@
 #pragma once
-#include "Graphic.h"
-#include "Image.h"
+#include "proxy/subjects/Graphic.h"
+#include "proxy/real_subjects/Image.h"
 
 class ImageProxy : public Graphic {
-private:
-	Image* m_image;
-	char* m_filename;
 public:
 	ImageProxy(const char*);
 	virtual ~ImageProxy();
 
 	virtual void draw();
-	virtual void handleMouse();
+
+	virtual Image* operator->();
+	virtual Image& operator*();
 
 	virtual void load(std::istream&);
 	virtual void save(std::ostream&);
-protected:
+
+	void proxy();
+private:
 	Image* getImage();
+	
+private:
+	Image* m_image;
+	char* m_filename;
 };

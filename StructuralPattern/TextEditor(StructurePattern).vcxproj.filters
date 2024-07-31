@@ -63,13 +63,13 @@
     <ClCompile Include="src\facade\sub-system_classes\ProgramNodeBuilder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\proxy\Image.cpp">
+    <ClCompile Include="src\proxy\real_subjects\Image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\proxy\ImageProxy.cpp">
+    <ClCompile Include="src\proxy\proxies\ImageProxy.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\proxy\Graphic.cpp">
+    <ClCompile Include="src\proxy\subjects\Graphic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\entity\compiler\program_node\ExpressionNode.cpp">
@@ -108,13 +108,13 @@
     <ClCompile Include="src\facade\sub-system_classes\code_generators\RISCCodeGenerator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\flyweight\Glyph.cpp">
+    <ClCompile Include="src\flyweight\flyweights\Glyph.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\flyweight\GlyphContext.cpp">
+    <ClCompile Include="src\flyweight\clients\GlyphContext.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\flyweight\GlyphFactory.cpp">
+    <ClCompile Include="src\flyweight\flyweight_factories\GlyphFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\Demonstrator.cpp">
@@ -133,6 +133,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\decorator\concrete_decorators\ScrollDecorator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\unshared_concrete_flyweights\Row.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\unshared_concrete_flyweights\Column.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\concrete_flyweights\Character.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\text\BTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\text\Font.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -236,40 +251,37 @@
     <ClInclude Include="include\facade\sub-system_classes\code_generators\RISCCodeGenerator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\Glyph.h">
+    <ClInclude Include="include\flyweight\flyweights\Glyph.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\text\Character.h">
+    <ClInclude Include="include\flyweight\concrete_flyweights\Character.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\GlyphContext.h">
+    <ClInclude Include="include\flyweight\clients\GlyphContext.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\text\Font.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\text\Window.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\entity\text\BTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\flyweight\GlyphFactory.h">
+    <ClInclude Include="include\flyweight\flyweight_factories\GlyphFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\text\Row.h">
+    <ClInclude Include="include\flyweight\unshared_concrete_flyweights\Row.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\text\Column.h">
+    <ClInclude Include="include\flyweight\unshared_concrete_flyweights\Column.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\proxy\Graphic.h">
+    <ClInclude Include="include\proxy\subjects\Graphic.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\proxy\Image.h">
+    <ClInclude Include="include\proxy\real_subjects\Image.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\proxy\ImageProxy.h">
+    <ClInclude Include="include\proxy\proxies\ImageProxy.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\connection\MS.h">
@@ -288,6 +300,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\decorator\concrete_decorators\ScrollDecorator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proxy\clients\client.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

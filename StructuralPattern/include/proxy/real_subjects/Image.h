@@ -1,5 +1,5 @@
 #pragma once
-#include "Graphic.h"
+#include "proxy/subjects/Graphic.h"
 
 class Image : public Graphic {
 private:
@@ -9,7 +9,6 @@ public:
 	virtual ~Image();
 
 	virtual void draw();
-	virtual void handleMouse();
 
 	virtual void load(std::istream&);
 	virtual void save(std::ostream&);
