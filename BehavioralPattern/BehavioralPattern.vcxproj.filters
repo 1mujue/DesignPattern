@@ -18,37 +18,34 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\chain_of_responsbility\HelpHandler.cpp">
+    <ClCompile Include="src\chain_of_responsibility\handlers\HelpHandler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\chain_of_responsbility\Button.cpp">
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Button.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\chain_of_responsbility\Dialog.cpp">
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Dialog.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\chain_of_responsbility\CORWidget.cpp">
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\CORWidget.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\command\Command.cpp">
+    <ClCompile Include="src\command\commands\Command.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\command\OpenCommand.cpp">
+    <ClCompile Include="src\command\concrete_commands\OpenCommand.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\command\PasteCommand.cpp">
+    <ClCompile Include="src\command\concrete_commands\PasteCommand.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\command\SimpleCommand.cpp">
+    <ClCompile Include="src\command\concrete_commands\SimpleCommand.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\command\MacroCommand.cpp">
+    <ClCompile Include="src\command\clients\CApplication.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\Application.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\entity\Document.cpp">
+    <ClCompile Include="src\command\receivers\Document.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\tool\log.cpp">
@@ -153,39 +150,45 @@
     <ClCompile Include="src\template_method\DerivedView.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Demonstrator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\invokers\CommandManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\chain_of_responsbility\HelpHandler.h">
+    <ClInclude Include="include\chain_of_responsibility\handlers\HelpHandler.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\chain_of_responsbility\Widget.h">
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\CORWidget.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\chain_of_responsbility\Button.h">
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\Button.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\chain_of_responsbility\Dialog.h">
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\Dialog.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\Application.h">
+    <ClInclude Include="include\command\clients\CApplication.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\Document.h">
+    <ClInclude Include="include\command\receivers\Document.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\command\Command.h">
+    <ClInclude Include="include\command\commands\Command.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\command\OpenCommand.h">
+    <ClInclude Include="include\command\concrete_commands\OpenCommand.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\command\PasteCommand.h">
+    <ClInclude Include="include\command\concrete_commands\PasteCommand.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\command\SimpleCommand.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\command\MacroCommand.h">
+    <ClInclude Include="include\command\concrete_commands\SimpleCommand.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\tool\log.h">
@@ -372,6 +375,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\visitor\Inventory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Demonstrator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\chain_of_responsibility\clients\client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\CORApplication.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\command\invokers\CommandManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

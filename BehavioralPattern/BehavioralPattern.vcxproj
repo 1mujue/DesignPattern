@@ -132,17 +132,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\chain_of_responsbility\Button.cpp" />
-    <ClCompile Include="src\chain_of_responsbility\Dialog.cpp" />
-    <ClCompile Include="src\chain_of_responsbility\HelpHandler.cpp" />
-    <ClCompile Include="src\chain_of_responsbility\CORWidget.cpp" />
-    <ClCompile Include="src\command\Command.cpp" />
-    <ClCompile Include="src\command\MacroCommand.cpp" />
-    <ClCompile Include="src\command\OpenCommand.cpp" />
-    <ClCompile Include="src\command\PasteCommand.cpp" />
-    <ClCompile Include="src\command\SimpleCommand.cpp" />
-    <ClCompile Include="src\entity\Application.cpp" />
-    <ClCompile Include="src\entity\Document.cpp" />
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Application.cpp" />
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Button.cpp" />
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Dialog.cpp" />
+    <ClCompile Include="src\chain_of_responsibility\handlers\HelpHandler.cpp" />
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\CORWidget.cpp" />
+    <ClCompile Include="src\command\commands\Command.cpp" />
+    <ClCompile Include="src\command\invokers\CommandManager.cpp" />
+    <ClCompile Include="src\command\concrete_commands\OpenCommand.cpp" />
+    <ClCompile Include="src\command\concrete_commands\PasteCommand.cpp" />
+    <ClCompile Include="src\command\concrete_commands\SimpleCommand.cpp" />
+    <ClCompile Include="src\Demonstrator.cpp" />
+    <ClCompile Include="src\command\clients\CApplication.cpp" />
+    <ClCompile Include="src\command\receivers\Document.cpp" />
     <ClCompile Include="src\interpreter\AddExp.cpp" />
     <ClCompile Include="src\interpreter\BooleanExp.cpp" />
     <ClCompile Include="src\interpreter\ConstantExp.cpp" />
@@ -179,19 +181,22 @@
     <ClCompile Include="src\tool\log.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\chain_of_responsbility\Button.h" />
-    <ClInclude Include="include\chain_of_responsbility\Dialog.h" />
-    <ClInclude Include="include\chain_of_responsbility\HelpHandler.h" />
-    <ClInclude Include="include\chain_of_responsbility\Widget.h" />
-    <ClInclude Include="include\command\Command.h" />
-    <ClInclude Include="include\command\MacroCommand.h" />
-    <ClInclude Include="include\command\OpenCommand.h" />
-    <ClInclude Include="include\command\PasteCommand.h" />
-    <ClInclude Include="include\command\SimpleCommand.h" />
+    <ClInclude Include="include\chain_of_responsibility\clients\client.h" />
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\CORApplication.h" />
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\Button.h" />
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\Dialog.h" />
+    <ClInclude Include="include\chain_of_responsibility\handlers\HelpHandler.h" />
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\CORWidget.h" />
+    <ClInclude Include="include\command\commands\Command.h" />
+    <ClInclude Include="include\command\concrete_commands\OpenCommand.h" />
+    <ClInclude Include="include\command\concrete_commands\PasteCommand.h" />
+    <ClInclude Include="include\command\concrete_commands\SimpleCommand.h" />
+    <ClInclude Include="include\command\invokers\CommandManager.h" />
     <ClInclude Include="include\connection\CCC.h" />
     <ClInclude Include="include\connection\CM.h" />
     <ClInclude Include="include\connection\EEV.h" />
-    <ClInclude Include="include\entity\Application.h" />
+    <ClInclude Include="include\Demonstrator.h" />
+    <ClInclude Include="include\command\clients\CApplication.h" />
     <ClInclude Include="include\connection\BC.h" />
     <ClInclude Include="include\connection\DW.h" />
     <ClInclude Include="include\entity\Coord.h" />
@@ -204,7 +209,7 @@
     <ClInclude Include="include\connection\TCP.h" />
     <ClInclude Include="include\interpreter\AddExp.h" />
     <ClInclude Include="include\interpreter\ConstantExp.h" />
-    <ClInclude Include="include\entity\Document.h" />
+    <ClInclude Include="include\command\receivers\Document.h" />
     <ClInclude Include="include\interpreter\BooleanExp.h" />
     <ClInclude Include="include\interpreter\Context.h" />
     <ClInclude Include="include\interpreter\NotExp.h" />

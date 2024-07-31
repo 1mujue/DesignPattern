@@ -310,5 +310,8 @@
     <None Include="include\adapter\README.md" />
     <None Include="include\composite\README.md" />
     <None Include="include\decorator\README.md" />
+    <None Include="include\proxy\README.md" />
+    <None Include="include\flyweight\README.md" />
+    <None Include="include\facade\README.md" />
   </ItemGroup>
 </Project>
