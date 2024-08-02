@@ -21,7 +21,7 @@
     <ClCompile Include="src\chain_of_responsibility\handlers\HelpHandler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Button.cpp">
+    <ClCompile Include="src\chain_of_responsibility\concrete_handlers\CORButton.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\chain_of_responsibility\concrete_handlers\Dialog.cpp">
@@ -51,97 +51,97 @@
     <ClCompile Include="src\tool\log.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\interpreter\VariableExp.cpp">
+    <ClCompile Include="src\interpreter\terminal_expressions\VariableExp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\interpreter\AddExp.cpp">
+    <ClCompile Include="src\interpreter\not_terminal_expressions\AddExp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\interpreter\OrExp.cpp">
+    <ClCompile Include="src\interpreter\not_terminal_expressions\OrExp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\interpreter\ConstantExp.cpp">
+    <ClCompile Include="src\interpreter\terminal_expressions\ConstantExp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\interpreter\NotExp.cpp">
+    <ClCompile Include="src\interpreter\not_terminal_expressions\NotExp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\interpreter\Context.cpp">
+    <ClCompile Include="src\interpreter\contexts\Context.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\interpreter\BooleanExp.cpp">
+    <ClCompile Include="src\interpreter\abstract_expressions\BooleanExp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\iterator\iterators\Iterator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\iterator\iterators\ListIterator.cpp">
+    <ClCompile Include="src\iterator\concrete_iterators\ListIterator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\iterator\traversers\Traverser.cpp">
+    <ClCompile Include="src\iterator\iterators\Traverser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\iterator\traversers\ListTraverser.cpp">
+    <ClCompile Include="src\iterator\concrete_iterators\ListTraverser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\iterator\lists\List.cpp">
+    <ClCompile Include="src\iterator\concrete_aggregates\List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\mediator\director\DialogDirector.cpp">
+    <ClCompile Include="src\mediator\mediators\DialogDirector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\mediator\widget\MWidget.cpp">
+    <ClCompile Include="src\mediator\colleagues\MWidget.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\mediator\director\FontDialogDirector.cpp">
+    <ClCompile Include="src\mediator\concrete_mediators\FontDialogDirector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\memento\ConstraintSolver.cpp">
+    <ClCompile Include="src\memento\originators\ConstraintSolver.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\memento\ConstraintSolverMemento.cpp">
+    <ClCompile Include="src\memento\mementoes\ConstraintSolverMemento.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\memento\MoveCommand.cpp">
+    <ClCompile Include="src\memento\caremakers\MoveCommand.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\observer\Subject.cpp">
+    <ClCompile Include="src\observer\subjects\Subject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\observer\ClockTimer.cpp">
+    <ClCompile Include="src\observer\concrete_subjects\ClockTimer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\observer\DigitalClock.cpp">
+    <ClCompile Include="src\observer\concrete_observers\DigitalClock.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\state\TCPConnection.cpp">
+    <ClCompile Include="src\state\contexts\TCPConnection.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\state\TCPstates\TCPState.cpp">
+    <ClCompile Include="src\state\states\TCPState.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\state\TCPstates\TCPClosed.cpp">
+    <ClCompile Include="src\state\concrete_states\TCPClosed.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\state\TCPstates\TCPEstablished.cpp">
+    <ClCompile Include="src\state\concrete_states\TCPEstablished.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\state\TCPstates\TCPListen.cpp">
+    <ClCompile Include="src\state\concrete_states\TCPListen.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\strategy\Composition.cpp">
+    <ClCompile Include="src\strategy\contexts\Composition.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\strategy\compositors\Compositor.cpp">
+    <ClCompile Include="src\strategy\strategies\Compositor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\strategy\compositors\ArrayCompositor.cpp">
+    <ClCompile Include="src\strategy\concrete_strategies\ArrayCompositor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\strategy\compositors\SimpleCompositor.cpp">
+    <ClCompile Include="src\strategy\concrete_strategies\SimpleCompositor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\strategy\compositors\TeXCompositor.cpp">
+    <ClCompile Include="src\strategy\concrete_strategies\TeXCompositor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\template_method\View.cpp">
@@ -159,6 +159,24 @@
     <ClCompile Include="src\command\invokers\CommandManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\iterator\aggregates\AbstractList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iterator\concrete_iterators\IteratorPtr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mediator\concrete_colleagues\MButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mediator\concrete_colleagues\ListBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\Graphic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\observer\observers\Observer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\chain_of_responsibility\handlers\HelpHandler.h">
@@ -167,7 +185,7 @@
     <ClInclude Include="include\chain_of_responsibility\concrete_handlers\CORWidget.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\Button.h">
+    <ClInclude Include="include\chain_of_responsibility\concrete_handlers\CORButton.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\chain_of_responsibility\concrete_handlers\Dialog.h">
@@ -194,148 +212,133 @@
     <ClInclude Include="include\tool\log.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\interpreter\BooleanExp.h">
+    <ClInclude Include="include\interpreter\abstract_expressions\BooleanExp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\interpreter\VariableExp.h">
+    <ClInclude Include="include\interpreter\terminal_expressions\VariableExp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\interpreter\AddExp.h">
+    <ClInclude Include="include\interpreter\not_terminal_expressions\AddExp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\interpreter\OrExp.h">
+    <ClInclude Include="include\interpreter\not_terminal_expressions\OrExp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\interpreter\NotExp.h">
+    <ClInclude Include="include\interpreter\not_terminal_expressions\NotExp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\interpreter\ConstantExp.h">
+    <ClInclude Include="include\interpreter\terminal_expressions\ConstantExp.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\interpreter\Context.h">
+    <ClInclude Include="include\interpreter\contexts\Context.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\connection\BC.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\iterator\lists\List.h">
+    <ClInclude Include="include\iterator\concrete_aggregates\List.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\iterator\iterators\Iterator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\iterator\iterators\ListIterator.h">
+    <ClInclude Include="include\iterator\concrete_iterators\ListIterator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\iterator\lists\AbstractList.h">
+    <ClInclude Include="include\iterator\aggregates\AbstractList.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\iterator\iterators\IteratorPtr.h">
+    <ClInclude Include="include\iterator\concrete_iterators\IteratorPtr.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\iterator\traversers\ListTraverser.h">
+    <ClInclude Include="include\iterator\concrete_iterators\ListTraverser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\iterator\traversers\Traverser.h">
+    <ClInclude Include="include\iterator\iterators\Traverser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\mediator\director\DialogDirector.h">
+    <ClInclude Include="include\mediator\mediators\DialogDirector.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\connection\DW.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\mediator\widget\MWidget.h">
+    <ClInclude Include="include\mediator\colleagues\MWidget.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\event\Event.h">
+    <ClInclude Include="include\mediator\concrete_colleagues\ListBox.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\event\MouseEvent.h">
+    <ClInclude Include="include\mediator\concrete_colleagues\MButton.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\mediator\widget\ListBox.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mediator\widget\Button.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mediator\widget\EntryField.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mediator\director\FontDialogDirector.h">
+    <ClInclude Include="include\mediator\concrete_mediators\FontDialogDirector.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\State.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\memento\MoveCommand.h">
+    <ClInclude Include="include\memento\caremakers\MoveCommand.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\memento\ConstraintSolverMemento.h">
+    <ClInclude Include="include\memento\mementoes\ConstraintSolverMemento.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\entity\Graphic.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\Point.h">
+    <ClInclude Include="include\memento\originators\ConstraintSolver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\memento\ConstraintSolver.h">
+    <ClInclude Include="include\observer\subjects\Subject.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\observer\Subject.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\observer\Observer.h">
+    <ClInclude Include="include\observer\observers\Observer.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\connection\OS.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\observer\ClockTimer.h">
+    <ClInclude Include="include\observer\concrete_subjects\ClockTimer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\observer\DigitalClock.h">
+    <ClInclude Include="include\observer\concrete_observers\DigitalClock.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\state\TCPConnection.h">
+    <ClInclude Include="include\state\contexts\TCPConnection.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\connection\TCP.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\state\TCPstates\TCPState.h">
+    <ClInclude Include="include\state\states\TCPState.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\state\TCPstates\TCPEstablished.h">
+    <ClInclude Include="include\state\concrete_states\TCPEstablished.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\state\TCPstates\TCPListen.h">
+    <ClInclude Include="include\state\concrete_states\TCPListen.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\state\TCPstates\TCPClosed.h">
+    <ClInclude Include="include\state\concrete_states\TCPClosed.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\strategy\Composition.h">
+    <ClInclude Include="include\strategy\contexts\Composition.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\connection\CCC.h">
+    <ClInclude Include="include\connection\CC.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\strategy\compositors\Compositor.h">
+    <ClInclude Include="include\strategy\strategies\Compositor.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\entity\Coord.h">
+    <ClInclude Include="include\strategy\concrete_strategies\SimpleCompositor.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\strategy\compositors\SimpleCompositor.h">
+    <ClInclude Include="include\strategy\concrete_strategies\TeXCompositor.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\strategy\compositors\TeXCompositor.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\strategy\compositors\ArrayCompositor.h">
+    <ClInclude Include="include\strategy\concrete_strategies\ArrayCompositor.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\connection\CM.h">
@@ -389,5 +392,18 @@
     <ClInclude Include="include\command\invokers\CommandManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\interpreter\clients\Client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\connection\CSCS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\chain_of_responsibility\README.md" />
+    <None Include="include\command\README.md" />
+    <None Include="include\interpreter\README.md" />
+    <None Include="include\memento\README.md" />
+    <None Include="include\mediator\README.md" />
   </ItemGroup>
 </Project>

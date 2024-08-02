@@ -1,6 +1,10 @@
 #pragma once
-#include "Point.h"
+#include "tool/log.h"
+
 class Graphic {
 public:
-	void move(const Point&);
+	Graphic();
+	virtual ~Graphic();
+
+	void move();
 };

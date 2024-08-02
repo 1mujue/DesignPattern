@@ -1,12 +1,12 @@
 #include <iostream>
 #include "tool/log.h"
-#include "interpreter/BooleanExp.h"
-#include "interpreter/AddExp.h"
-#include "interpreter/ConstantExp.h"
-#include "interpreter/Context.h"
-#include "interpreter/NotExp.h"
-#include "interpreter/OrExp.h"
-#include "interpreter/VariableExp.h"
+#include "interpreter/abstract_expressions/BooleanExp.h"
+#include "interpreter/contexts/Context.h"
+#include "interpreter/not_terminal_expressions/AddExp.h"
+#include "interpreter/not_terminal_expressions/NotExp.h"
+#include "interpreter/not_terminal_expressions/OrExp.h"
+#include "interpreter/terminal_expressions/ConstantExp.h"
+#include "interpreter/terminal_expressions/VariableExp.h"
 
 
 int main() {
@@ -16,8 +16,8 @@ int main() {
 	BooleanExp* exp;
 	Context* context = new Context();
 
-	VariableExp* x = new VariableExp(context, "X");
-	VariableExp* y = new VariableExp(context, "Y");
+	VariableExp* x = new VariableExp("X");
+	VariableExp* y = new VariableExp("Y");
 
 	exp = new OrExp(
 		new AddExp(new ConstantExp(true), x),
