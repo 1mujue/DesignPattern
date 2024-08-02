@@ -269,8 +269,12 @@
     <None Include="include\chain_of_responsibility\README.md" />
     <None Include="include\command\README.md" />
     <None Include="include\interpreter\README.md" />
+    <None Include="include\iterator\README.md" />
     <None Include="include\mediator\README.md" />
     <None Include="include\memento\README.md" />
+    <None Include="include\observer\README.md" />
+    <None Include="include\state\README.md" />
+    <None Include="include\strategy\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
