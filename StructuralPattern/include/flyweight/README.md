@@ -1,10 +1,4 @@
-# Key words
-
-Flyweight, Concrete Flyweight, Unshared Concrete Flyweight, Flyweight Factory, Client
-
-
-
-# Brief Introduction
+# Brief introduction
 
 Sometimes we have to create **A LOT OF** objects that are **quite similar but not completely same**, and Prototype Pattern is quite suitable.
 
@@ -18,6 +12,22 @@ In this case, we just need to store outer state, and that will reduce the memory
 
 
 
+# Structure
+
+Flyweight, Concrete Flyweight, Unshared Concrete Flyweight, Flyweight Factory, Client
+
+- Flyweight: Glyph
+
+- Concrete Flyweight: Character
+
+- Unshared Concrete Flyweight: Row, Column
+
+- Flyweight Factory: Glyph Factory
+
+- Client: Glyph Context
+
+
+
 # How does it work
 
 **Flyweight** will declare some methods, and **Concrete Flyweight** and **Unshared Concrete Flyweight** will extend it. Concrete Flyweight would implement methods declared by Flyweight, and it would **STORE INNER STATE**. Concrete Flyweight must be shared, while Unshared Concrete Flyweight doesn't have to. The only difference between Concrete Flyweight and Unshared Concrete Flyweight is **whether it needs to be shared compulsorily.**
@@ -25,20 +35,6 @@ In this case, we just need to store outer state, and that will reduce the memory
 Then a Client will **STORE OUTER STATE** of Flyweights. It is obvious that Client is context-related, and it is usually a context(For example, a Client in text editor would store different outer states in different position in the article). Ultimately, Flyweight Factory would create and manage Flyweight objects.
 
 Take text editor for example. **a** is a character, we find the **context(Client)** of it, and know its **outer state is BOLD**, and we visit Flyweight Factory to get Flyweight of it to get its **inner state, which is alphabet a.**
-
-
-
-# Structure
-
-Flyweight: Glyph
-
-Concrete Flyweight: Character
-
-Unshared Concrete Flyweight: Row, Column
-
-Flyweight Factory: Glyph Factory
-
-Client: Glyph Context
 
 
 

@@ -1,8 +1,4 @@
-# Key words
-
-Target, Adaptee, Adapter, Client
-
-# Introduction
+# Brief introduction
 
 Sometimes we want to use an interface, but unfortunately, when we designed the interface, we didn't take that into consideration, so it is **not compatible**. However, what the interface provides with us is exactly what we want, so we have this pattern: Adapter Pattern.
 
@@ -19,13 +15,19 @@ In object way, it is a little complicated, but it is more flexible! We could pas
 
 # Structure
 
-Target: Shape
+Target, Adaptee, Adapter, Client
 
-Adaptee: Text Shape
+- Target: Shape
 
-Adapter: Text Shape Class, Text Shape Object
+- Adaptee: Text Shape
 
-Client: Demonstrator
+- Adapter: Text Shape Class, Text Shape Object
+
+- Client: Demonstrator
+
+
+
+# How does it work
 
 
 

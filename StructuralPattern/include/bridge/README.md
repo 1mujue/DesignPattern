@@ -1,8 +1,4 @@
-# Key words:
-
-Abstraction, Refined Abstraction, Implementor, Concrete Implementor
-
-# Introduction
+# Brief introduction
 
 Usually, we would make an abstract class to declare some methods, and then, we will make many derived classes to implement these methods differently. However,  that **BINDS** the abstract and its implementation.
 
@@ -18,13 +14,18 @@ We will declare methods in Abstraction, and "implement" them in Implementor. To 
 
 # Structure
 
-Abstraction: Window
+Abstraction, Refined Abstraction, Implementor, Concrete Implementor
 
-Refined Abstraction: Application Window, Icon Window
+- Abstraction: Window
+- Refined Abstraction: Application Window, Icon Window
 
-Implementor: Window Impl
+- Implementor: Window Impl
 
-Concrete Implementor: XWindow Impl, PMWindow Impl
+- Concrete Implementor: XWindow Impl, PMWindow Impl
+
+
+
+# How does it work
 
 
 

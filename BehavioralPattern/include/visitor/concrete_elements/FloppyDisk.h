@@ -1,19 +1,14 @@
 #pragma once
-#include "connection/EEV.h"
+#include "visitor/elements/Equipment.h"
 
-class Equipment {
+class FloppyDisk :public Equipment {
 public:
-	virtual ~Equipment();
-
-	const char* getName();
+	FloppyDisk(const char*);
+	virtual ~FloppyDisk();
 
 	virtual double getPower();
 	virtual double getNetPrice();
 	virtual double getDiscountPrice();
 
 	virtual void accept(EquipmentVisitor*);
-protected:
-	Equipment(const char*);
-private:
-	const char* m_name;
 };

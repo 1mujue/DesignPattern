@@ -1,9 +1,3 @@
-# Key words
-
-Command, Concrete Command, Receiver, Invoker, Client
-
-
-
 # Brief Introduction
 
 If we work in a team, and different member would design different components, then there is a big problem: Component A would use some methods in Component B, but these components are designed by different people. Then, Component A **don't know which methods to call exactly,** and that is why merging is so difficult, and that's why we need to use Command Pattern. 
@@ -12,25 +6,27 @@ Command Pattern would take a request as an **OBJECT**, and that makes it more fl
 
 
 
+# Structure
+
+Command, Concrete Command, Receiver, Invoker, Client
+
+- Command: Command
+
+- Concrete Command: Open Command, Paste Command, Simple Command
+
+- Receiver: Document
+
+- Invoker: Command Manager
+
+- Client: Application
+
+
+
 # How does it work
 
 Command would declare an interface to execute the request, and Concrete Commands would extend Command, override the method in Command and contains a reference or a pointer to a  Receiver that handles the request.
 
 Client would create a Concrete Command and select a Receiver, and Invoker would ask the Concrete Command to execute the request.
-
-
-
-# Structure
-
-Command: Command
-
-Concrete Command: Open Command, Paste Command, Simple Command
-
-Receiver: Document
-
-Invoker: Command Manager
-
-Client: Application
 
 
 

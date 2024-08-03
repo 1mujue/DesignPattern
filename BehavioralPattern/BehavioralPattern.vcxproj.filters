@@ -144,10 +144,10 @@
     <ClCompile Include="src\strategy\concrete_strategies\TeXCompositor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\template_method\View.cpp">
+    <ClCompile Include="src\template_method\abstract_classes\View.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\template_method\DerivedView.cpp">
+    <ClCompile Include="src\template_method\concrete _classes\DerivedView.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\Demonstrator.cpp">
@@ -175,6 +175,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\observer\observers\Observer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\elements\Equipment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\concrete_elements\FloppyDisk.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\concrete_elements\Chassis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\visitors\EquipmentVisitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\concrete_visitors\PricingVisitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\object_structures\ObjectStructure.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -344,40 +362,28 @@
     <ClInclude Include="include\connection\CM.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\template_method\View.h">
+    <ClInclude Include="include\template_method\abstract_classes\View.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\template_method\DerivedView.h">
+    <ClInclude Include="include\template_method\concrete _classes\DerivedView.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\visitor\equipments\Equipment.h">
+    <ClInclude Include="include\visitor\elements\Equipment.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\visitor\visitors\EquipmentVisitor.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\visitor\equipments\FloppyDisk.h">
+    <ClInclude Include="include\visitor\concrete_elements\FloppyDisk.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\visitor\equipments\Bus.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\visitor\equipments\Card.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\visitor\equipments\Chassis.h">
+    <ClInclude Include="include\visitor\concrete_elements\Chassis.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\connection\EEV.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\visitor\visitors\PricingVisitor.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\visitor\visitors\InventoryVisitor.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\visitor\Inventory.h">
+    <ClInclude Include="include\visitor\concrete_visitors\PricingVisitor.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\Demonstrator.h">
@@ -398,6 +404,9 @@
     <ClInclude Include="include\connection\CSCS.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\visitor\object_structures\object_structures.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="include\chain_of_responsibility\README.md" />
@@ -409,5 +418,7 @@
     <None Include="include\iterator\README.md" />
     <None Include="include\observer\README.md" />
     <None Include="include\state\README.md" />
+    <None Include="include\template_method\README.md" />
+    <None Include="include\visitor\README.md" />
   </ItemGroup>
 </Project>

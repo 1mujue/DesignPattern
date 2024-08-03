@@ -1,9 +1,3 @@
-# Key words
-
-Aggregate, Concrete Aggregate, Iterator, Concrete Iterator
-
-
-
 # Brief introduction
 
 We usually use container. If we write a container such as list, hash_map, vector, etc, we have to think about a question: how to traverse it?
@@ -14,21 +8,23 @@ That is why you should use Iterator Pattern. It aims to traverse an aggregate WI
 
 
 
+# Structure
+
+Aggregate, Concrete Aggregate, Iterator, Concrete Iterator
+
+- Aggregate: Abstract List
+
+- Concrete Aggregate: List
+
+- Iterator: Iterator(external iterator), Traverser(internal iterator)
+
+- Concrete Iterator: List Iterator(external iterator), List Traverser(internal iterator), Iterator Ptr(proxy)
+
+
+
 # How does it work
 
 Aggregate is an abstract container, and it declare a **method to return an Iterator**. Iterator would declare methods to visit and traverse Aggregate. Concrete Iterators would extend and implement Iterator, and each Concrete Aggregates would implement the method to return an Iterator and the method would return a Concrete Iterator related to the Concrete Aggregate.
-
-
-
-# Structure
-
-Aggregate: Abstract List
-
-Concrete Aggregate: List
-
-Iterator: Iterator(external iterator), Traverser(internal iterator)
-
-Concrete Iterator: List Iterator(external iterator), List Traverser(internal iterator), Iterator Ptr(proxy)
 
 
 

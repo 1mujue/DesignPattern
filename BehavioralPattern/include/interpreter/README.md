@@ -1,9 +1,3 @@
-# Key words
-
-Abstract Expression, Terminal Expression, Not Terminal Expression, Context, Client
-
-
-
 # Brief Introduction
 
 The Interpreter Pattern is a little "limited": usually, it is used in **COMPILER,** but it can extend to other situations if you can recognize the basic conditions to use it.
@@ -28,25 +22,27 @@ Each grammar would be a **CLASS.**
 
 
 
+# Structure
+
+Abstract Expression, Terminal Expression, Not Terminal Expression, Context, Client
+
+- Abstract Expression: Boolean Exp
+
+- Terminal Expression: Variable Exp, Constant Exp
+
+- Not Terminal Expression: Add Exp, Not Exp, Or Exp
+
+- Context: context 
+
+- Client: Demonstrator
+
+
+
 # How does it work
 
 Abstract Expression would declare an abstract **interpretation method** which will be shared with all nodes in **ABSTRACT SYNTAX TREE.** Terminal Expression and Not Terminal Expression would extend Abstract Expression and implement the interpretation method. 'Terminal' here means whether the expression has **CHILD EXPRESSION.** Terminal Expression would be a LEAF NODE in abstract syntax tree, so it doesn't have child expression, while Not Terminal Expression is a NORMAL NODE in abstract syntax tree, which means it must contain **REFERENCES OR POINTERS** to Abstract Expression.
 
 Context contains some other information(=quite important), and Client will **BUILD OR OFFER** an abstract syntax tree, which consists of Terminal Expression and Not Terminal Expression.
-
-
-
-# Structure
-
-Abstract Expression: Boolean Exp
-
-Terminal Expression: Variable Exp, Constant Exp
-
-Not Terminal Expression: Add Exp, Not Exp, Or Exp
-
-Context: context 
-
-Client: Demonstrator
 
 
 

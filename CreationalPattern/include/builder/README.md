@@ -1,10 +1,4 @@
-# Key words
-
-Builder, Concrete Builder, Product, Director
-
-
-
-# Introduction
+# Brief introduction
 
 This is a Builder, it will provide us with interfaces to create A PART OF a Product, which is usually a CERTAIN CLASS. 
 
@@ -20,15 +14,21 @@ Director is who use interfaces provided by Builder to create product.
 
 
 
+# How does it work
+
+
+
 # Structure
 
-Builder: Maze Builder
+Builder, Concrete Builder, Product, Director
 
-Concrete Builder: Counting Maze Builder(this builder will calculate the NUMBER of room and door), Standard Maze Builder
+- Builder: Maze Builder
 
-Product: Maze(built by Standard Maze Builder), the number of room and door (built by Counting Maze Builder)
+- Concrete Builder: Counting Maze Builder(this builder will calculate the NUMBER of room and door), Standard Maze Builder
 
-Director: Maze Game
+- Product: Maze(built by Standard Maze Builder), the number of room and door (built by Counting Maze Builder)
+
+- Director: Maze Game
 
 
 

@@ -1,8 +1,4 @@
-# Key words
-
-Singleton
-
-# Introduction
+# Brief introduction
 
 Sometimes, we want to make a class **ONLY have ONE instance**. This kind of class is usually a **TOOL class,** it is unnecessary to instantiate it a lot of time, and we call that kind of class **Singleton.** But this is too simple. What you should learn is, the Singleton Pattern should focus on **controlling the number of its objects,** so it is possible that it has many objects(usually we do this by **EXTENDING the Singleton**).
 
@@ -14,9 +10,19 @@ How can we make a class Singleton? this is very interesting. Usually, there are 
 2. Let the constructor method of the class be **protected(sub class exists) or private(sub class doesn't exist)**. Because we don't want to instantiate the class casually, we have to do it. (If we could instantiate everywhere, then it is not Singleton.)  But if you use protected, there will be **"many" Singleton objects**, but these Singleton objects are not completely same: each one of them is still the ONLY object of a Singleton class's sub class.
 3. If the pointer create in step 1 is **private or protected**, then you should write a **static public method** (usually called getInstance()) to get the pointer.
 
+
+
 # Structure
 
-Singleton: Singleton [Bomb, Enchanted, null] Maze Factory.
+Singleton
+
+- Singleton: Singleton [Bomb, Enchanted, null] Maze Factory.
+
+
+
+# How does it work
+
+
 
 # TIPS
 

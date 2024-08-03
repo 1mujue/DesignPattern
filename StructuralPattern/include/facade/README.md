@@ -1,10 +1,4 @@
-# Key words
-
-Facade, Subsystem Classes
-
-
-
-# Introduction
+# Brief introduction
 
 As the development goes, if you follow the principle, then a lot of sub systems would be created. Usually, we make a sub system since its components are quite similar, or they corporate with each other to finish a specific assignment. 
 
@@ -20,9 +14,11 @@ The pattern is quite simple, and I suggest you read the code more to understand 
 
 # Structure
 
-Facade: Compiler
+Facade, Subsystem Classes
 
-Sub System Classes: (Based Class)Code Generator, (Derived Class)RISC Code Generator, Parser, Program Node Builder, Scanner
+- Facade: Compiler
+
+- Sub System Classes: (Based Class)Code Generator, (Derived Class)RISC Code Generator, Parser, Program Node Builder, Scanner
 
 
 

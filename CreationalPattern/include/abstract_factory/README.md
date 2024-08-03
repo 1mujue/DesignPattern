@@ -1,9 +1,4 @@
-# Key words
-Abstract Factory, Concrete Factory, Abstract Product, Concrete Product, Client
-
-
-
-# Introduction
+# Brief introduction
 An ABSTRACT factory provides with some interfaces (1) to create some products, and each product here is also an ABSTRACT product. 
 
 Then, we can have many CONCRETE factories to EXTEND this abstract factory,  and they will create CONCRETE products(EXTEND abstract product) for us.
@@ -17,15 +12,24 @@ Client is who use interfaces provided by abstract factory and abstract product.
 
 
 # Structure
-Abstract Factory: Maze Factory
 
-Concrete Factory: [Bomb, Enchanted, null] Maze Factory
+Abstract Factory, Concrete Factory, Abstract Product, Concrete Product, Client
 
-Abstract Product: Door, Wall, Room
+- Abstract Factory: Maze Factory
 
-Concrete Product: [Bomb, Enchanted, null] Door, Wall, Room
+- Concrete Factory: [Bomb, Enchanted, null] Maze Factory
 
-Client: Maze Game.
+- Abstract Product: Door, Wall, Room
+
+- Concrete Product: [Bomb, Enchanted, null] Door, Wall, Room
+
+- Client: Maze Game.
+
+
+
+# How does it work
+
+
 
 
 # TIPS 

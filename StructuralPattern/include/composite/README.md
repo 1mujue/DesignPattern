@@ -1,10 +1,4 @@
-# Key words
-
-Component, Leaf, Composite, Client
-
-
-
-# Introduction
+# Brief introduction
 
 As we mentioned in Adapter Pattern, sometimes we want to illustrate a **TREE-LIKE** structure, then how to realize a tree-like structure? In file system, we have directories and normal files. To be more abstract, we have **CONTAINER and COMPONENT.** 
 
@@ -20,13 +14,19 @@ Of course, Composite also has `add()` and `remove()` methods to **manage its chi
 
 # Structure
 
-Component: Equipment
+Component, Leaf, Composite, Client
 
-Composite: (Based Class)Composite Equipment, (Derived Class)Chassis
+- Component: Equipment
 
-Leaf: Bus, Floppy Disk
+- Composite: (Based Class)Composite Equipment, (Derived Class)Chassis
 
-Client: Demonstrator
+- Leaf: Bus, Floppy Disk
+
+- Client: Demonstrator
+
+
+
+# How does it work
 
 
 

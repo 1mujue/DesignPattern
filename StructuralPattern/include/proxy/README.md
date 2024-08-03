@@ -1,10 +1,4 @@
-# Key words
-
-Subject, Real Subject, Proxy, Client
-
-
-
-# Brief Introduction
+# Brief introduction
 
 Proxy is a representation of something. Of course, it is also a **CONTROLLER.**
 
@@ -22,6 +16,22 @@ In programming world, a proxy has more duties:
 
 
 
+
+
+# Structure
+
+Subject, Real Subject, Proxy, Client
+
+- Subject: Graphic
+
+- Real Subject: Image
+
+- Proxy: Image Proxy
+
+- Client: Demonstrator
+
+
+
 # How does it work
 
 Subject would declare a public interface of Real Subject and Proxy, then **everywhere you can use a Real Subject, you can use a Proxy.**
@@ -33,18 +43,6 @@ Proxy will contains a reference(or pointer) to Real Subject(or Subject), and it 
 - Remote Proxy: sends requests to Real Subject in different address space.
 - Virtual Proxy: stores information related to Real Subject**(CACHE)**, and (usually) initialize a Real Subject object **ONLY when you visit it.**
 - Protection Proxy: checks ACCESS PERMISSION of a caller.
-
-
-
-# Structure
-
-Subject: Graphic
-
-Real Subject: Image
-
-Proxy: Image Proxy
-
-Client: Demonstrator
 
 
 

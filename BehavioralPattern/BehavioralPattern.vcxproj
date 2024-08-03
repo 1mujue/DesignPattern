@@ -186,9 +186,15 @@
     <ClCompile Include="src\strategy\strategies\Compositor.cpp" />
     <ClCompile Include="src\strategy\concrete_strategies\SimpleCompositor.cpp" />
     <ClCompile Include="src\strategy\concrete_strategies\TeXCompositor.cpp" />
-    <ClCompile Include="src\template_method\DerivedView.cpp" />
-    <ClCompile Include="src\template_method\View.cpp" />
+    <ClCompile Include="src\template_method\concrete _classes\DerivedView.cpp" />
+    <ClCompile Include="src\template_method\abstract_classes\View.cpp" />
     <ClCompile Include="src\tool\log.cpp" />
+    <ClCompile Include="src\visitor\concrete_elements\Chassis.cpp" />
+    <ClCompile Include="src\visitor\concrete_elements\FloppyDisk.cpp" />
+    <ClCompile Include="src\visitor\concrete_visitors\PricingVisitor.cpp" />
+    <ClCompile Include="src\visitor\elements\Equipment.cpp" />
+    <ClCompile Include="src\visitor\object_structures\ObjectStructure.cpp" />
+    <ClCompile Include="src\visitor\visitors\EquipmentVisitor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\chain_of_responsibility\clients\client.h" />
@@ -252,18 +258,15 @@
     <ClInclude Include="include\strategy\strategies\Compositor.h" />
     <ClInclude Include="include\strategy\concrete_strategies\SimpleCompositor.h" />
     <ClInclude Include="include\strategy\concrete_strategies\TeXCompositor.h" />
-    <ClInclude Include="include\template_method\DerivedView.h" />
-    <ClInclude Include="include\template_method\View.h" />
+    <ClInclude Include="include\template_method\concrete _classes\DerivedView.h" />
+    <ClInclude Include="include\template_method\abstract_classes\View.h" />
     <ClInclude Include="include\tool\log.h" />
-    <ClInclude Include="include\visitor\equipments\Bus.h" />
-    <ClInclude Include="include\visitor\equipments\Card.h" />
-    <ClInclude Include="include\visitor\equipments\Chassis.h" />
-    <ClInclude Include="include\visitor\equipments\Equipment.h" />
-    <ClInclude Include="include\visitor\equipments\FloppyDisk.h" />
-    <ClInclude Include="include\visitor\Inventory.h" />
+    <ClInclude Include="include\visitor\concrete_elements\Chassis.h" />
+    <ClInclude Include="include\visitor\elements\Equipment.h" />
+    <ClInclude Include="include\visitor\concrete_elements\FloppyDisk.h" />
+    <ClInclude Include="include\visitor\object_structures\object_structures.h" />
     <ClInclude Include="include\visitor\visitors\EquipmentVisitor.h" />
-    <ClInclude Include="include\visitor\visitors\InventoryVisitor.h" />
-    <ClInclude Include="include\visitor\visitors\PricingVisitor.h" />
+    <ClInclude Include="include\visitor\concrete_visitors\PricingVisitor.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="include\chain_of_responsibility\README.md" />
@@ -275,6 +278,8 @@
     <None Include="include\observer\README.md" />
     <None Include="include\state\README.md" />
     <None Include="include\strategy\README.md" />
+    <None Include="include\template_method\README.md" />
+    <None Include="include\visitor\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,13 +1,3 @@
-# Structure
-
-Memento, Originator, Caretaker
-
-- Memento: Constraint Solver Memento
-- Originator: Constraint Solver
-- Caretaker: Move Command(it is also an instance of Command Pattern.)
-
-
-
 # Brief introduction
 
 Sometimes it is necessary to record the inner state of an object, and then store the state **OUT OF THE OBJECT.** Then, if something goes wrong and we want to go back to the right version, then we can set the state of the object to the state stored previously.
@@ -15,6 +5,16 @@ Sometimes it is necessary to record the inner state of an object, and then store
 However, the state of an object is usually encapsulated,  so we have to design gracefully to avoid destroy the encapsulation, otherwise the inner information would be exposed when using a simple and raw **NOTE BOOK(kidding).** 
 
 Memento Pattern would solve the problem. A Memento would store the state of an object **at a certain moment** as well as not expose details of the object, making its encapsulation intact.
+
+
+
+# Structure
+
+Memento, Originator, Caretaker
+
+- Memento: Constraint Solver Memento
+- Originator: Constraint Solver
+- Caretaker: Move Command(it is also an instance of Command Pattern.)
 
 
 

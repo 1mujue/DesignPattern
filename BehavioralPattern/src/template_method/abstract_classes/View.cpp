@@ -1,5 +1,4 @@
-#include "template_method/View.h"
-#include "tool/log.h"
+#include "template_method/abstract_classes/View.h"
 
 View::View() { ; }
 View::~View() { ; }
@@ -8,6 +7,8 @@ void View::display() {
 	setFocus();
 	doDisplay();
 	resetFocus();
+
+	showBased();
 }
 
 void View::setFocus() {
@@ -18,4 +19,8 @@ void View::doDisplay() {
 }
 void View::resetFocus() {
 	logMessage("reset focus in view...");
+}
+
+void View::showBased() {
+	logMessage("show based in view...");
 }

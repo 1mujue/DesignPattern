@@ -1,8 +1,4 @@
-# Key words
-
-Product, Concrete Product, Creator, Concrete Creator
-
-# Introduction
+# brief introduction
 
 Sometimes, we don't know how to instantiate a class in super class, and we have to give the task to its sub class, and that is where factory method pattern comes from.
 
@@ -21,13 +17,15 @@ In my realization, I use the **second way,**  trying to be consistent with Abstr
 
 # Structure
 
-Creator: Maze Creator
+Product, Concrete Product, Creator, Concrete Creator
 
-Concrete Creator: [Enchanted, Bomb, null] Maze Creator
+- Creator: Maze Creator
 
-Product: Room, Door, Wall
+- Concrete Creator: [Enchanted, Bomb, null] Maze Creator
 
-Concrete Product: [Enchanted, Bomb, null] Door, Wall
+- Product: Room, Door, Wall
+
+- Concrete Product: [Enchanted, Bomb, null] Door, Wall
 
 
 

@@ -1,10 +1,4 @@
-# Key words
-
-Components, Concrete Components, Decorators, Concrete Decorators
-
-
-
-# Introduction
+# Brief introduction
 
 Usually, when we want to add something new to a Class, then we will write a Derived Class which will extend the original Class, and the original Class would become the Based Class. However, the process is **STATIC:** we have done this before the program run. 
 
@@ -22,13 +16,19 @@ CDA and CDB both contain **a reference or pointer to a Component,** and we assum
 
 # Structure
 
-Component: Visual Component
+Components, Concrete Components, Decorators, Concrete Decorators
 
-Concrete Component: Concrete Visual Component
+- Component: Visual Component
 
-Decorator: Decorator
+- Concrete Component: Concrete Visual Component
 
-Concrete Decorator: Border Decorator, Scroll Decorator
+- Decorator: Decorator
+
+- Concrete Decorator: Border Decorator, Scroll Decorator
+
+
+
+# How does it work
 
 
 

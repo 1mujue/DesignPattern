@@ -1,8 +1,4 @@
-# Key words
-
-Prototype, Concrete Prototype, Client
-
-# Introduction
+# Brief introduction
 
 In Factory Method Pattern, if we want to create a new Concrete Product,we have to create a related Concrete Creator. However, the difference between old and new Concrete Product may be quite **trivial** that it seems **unnecessary** to create a brand new Concrete Creator Class. After all, no one wants to waste time on **rewriting almost same codes** for many times. Additionally, sometimes we already have a **TEMPLATE**, so we may just want to create a new object based on the template.
 
@@ -12,11 +8,19 @@ However, we often don't want to just get a copy of the original object, we need 
 
 # Structure
 
-Prototype: Door, Wall, Room
+Prototype, Concrete Prototype, Client
 
-Concrete Prototype: [Enchanted, Bomb, null] Door, Wall, Room
+- Prototype: Door, Wall, Room
 
-Client: Maze Game
+- Concrete Prototype: [Enchanted, Bomb, null] Door, Wall, Room
+
+- Client: Maze Game
+
+
+
+# How does it work
+
+
 
 # TIPS
 

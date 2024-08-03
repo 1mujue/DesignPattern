@@ -1,9 +1,3 @@
-# Key words
-
-Handler, Concrete Handler, Client
-
-
-
 # Brief introduction
 
 When we use a text editor, there are a lot of components, and we assume all of them can be **CLICKED,** and then help information would show up.
@@ -16,19 +10,21 @@ With Chain Of Responsibility Pattern, we can **DECOUPLE** the sender and the han
 
 
 
+# Structure
+
+Handler, Concrete Handler, Client
+
+- Handler: Help Handler
+
+- Concrete Handler: (Based Class)COR Widget;  (Derived Class)Button, Dialog; Application
+
+- Client: Demonstrator
+
+
+
 # How does it work
 
 Handler would define a **method to handle requests** and contain a **reference(or pointer) to Handler.** Concrete Handlers would extend Handler, and override the method to handle the requests. If the current Concrete Handler couldn't handle the request, it will **pass the request to the next Concrete Handler(successor)**(referred or pointed by reference or pointer in Handler) until there is no successor or the current Concrete Handler don't want to pass the request.
-
-
-
-# Structure
-
-Handler: Help Handler
-
-Concrete Handler: (Based Class)COR Widget;  (Derived Class)Button, Dialog; Application
-
-Client: Demonstrator
 
 
 

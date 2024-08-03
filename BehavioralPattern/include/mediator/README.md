@@ -1,3 +1,13 @@
+# Brief introduction
+
+It is a good idea to program **COMPONENT BY COMPONENT,** as it fits the principle of **high aggregation and low coupling**, but then comes a problem: how do they coordinate or communicate with each other?
+
+As a matter of fact, if you have more components, it would be more difficult for them to coordinate or communicate with each other, and the dependency relations would be so complex and messy that it will **OFFSET the advantage** of modular programming.
+
+Mediator Pattern would handle the problem. In this pattern, a Mediator would in response for coordination and communication, and each components would just contain a reference or pointer to the Mediator, they will coordinate or communicate INDIRECTLY by sending the message to Mediator, and then Mediator sends the message to other components.
+
+
+
 # Structure
 
 Mediator, Concrete Mediator,Colleague, Concrete Colleague(Colleague Classes)
@@ -9,16 +19,6 @@ Mediator, Concrete Mediator,Colleague, Concrete Colleague(Colleague Classes)
 - Colleague: MWidget
 
 - Concrete Colleague: Button, List Box
-
-
-
-# Brief introduction
-
-It is a good idea to program **COMPONENT BY COMPONENT,** as it fits the principle of **high aggregation and low coupling**, but then comes a problem: how do they coordinate or communicate with each other?
-
-As a matter of fact, if you have more components, it would be more difficult for them to coordinate or communicate with each other, and the dependency relations would be so complex and messy that it will **OFFSET the advantage** of modular programming.
-
-Mediator Pattern would handle the problem. In this pattern, a Mediator would in response for coordination and communication, and each components would just contain a reference or pointer to the Mediator, they will coordinate or communicate INDIRECTLY by sending the message to Mediator, and then Mediator sends the message to other components.
 
 
 
